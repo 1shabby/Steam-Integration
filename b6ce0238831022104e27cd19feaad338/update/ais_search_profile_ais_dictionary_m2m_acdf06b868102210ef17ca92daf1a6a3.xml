@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="ais_search_profile_ais_dictionary_m2m">
+    <ais_search_profile_ais_dictionary_m2m action="INSERT_OR_UPDATE">
+        <dictionary display_value="default_synonym_dictionary">b29df374c7531010d1cfd9795cc260cd</dictionary>
+        <dictionary_reference_qualifier/>
+        <marked_for_deletion>false</marked_for_deletion>
+        <profile display_value="steam-workspace Search Profile">24df06b837102210b6fe4881cdeb15a5</profile>
+        <sys_class_name>ais_search_profile_ais_dictionary_m2m</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-13 01:29:31</sys_created_on>
+        <sys_id>acdf06b868102210ef17ca92daf1a6a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>default_synonym_dictionary.steam-workspace Search Profile</sys_name>
+        <sys_package display_value="Steam" source="x_941875_steam">b6ce0238831022104e27cd19feaad338</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
+        <sys_update_name>ais_search_profile_ais_dictionary_m2m_acdf06b868102210ef17ca92daf1a6a3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-13 01:29:31</sys_updated_on>
+    </ais_search_profile_ais_dictionary_m2m>
+</record_update>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget">
+    <par_dashboard_widget action="DELETE">
+        <canvas display_value="">8bdf0ab8831022104e27cd19feaad335</canvas>
+        <component display_value="Heading">1f6e0643eca7a637e36bd7833549ec9e</component>
+        <component_props>{"variant":"header-primary","label":"Happening Now","wontWrap":false,"hasNoMargin":false,"level":"1","filterConfigurations":[],"noDebounce":"","contextMenuActions":[]}</component_props>
+        <h>3</h>
+        <name/>
+        <stored_component/>
+        <sys_class_name>par_dashboard_widget</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-13 01:29:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>1bdf0ab8831022104e27cd19feaad341</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="Steam" source="x_941875_steam">b6ce0238831022104e27cd19feaad338</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
+        <sys_update_name>par_dashboard_widget_1bdf0ab8831022104e27cd19feaad341</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-13 01:29:40</sys_updated_on>
+        <visualization/>
+        <w>47</w>
+        <widget_props/>
+        <x>0</x>
+        <y>0</y>
+    </par_dashboard_widget>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="Steam">b6ce0238831022104e27cd19feaad338</application>
+        <file_path/>
+        <instance_id>868367d5db8e79d0caf99027c5961921</instance_id>
+        <instance_name>dev193300</instance_name>
+        <name>par_dashboard_widget_1bdf0ab8831022104e27cd19feaad341</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_widget"><par_dashboard_widget action="INSERT_OR_UPDATE"><canvas display_value="">8bdf0ab8831022104e27cd19feaad335</canvas><component display_value="Heading">1f6e0643eca7a637e36bd7833549ec9e</component><component_props>{"variant":"header-primary","label":"Happening Now","wontWrap":false,"hasNoMargin":false,"level":"1","filterConfigurations":[],"noDebounce":"","contextMenuActions":[]}</component_props><h>3</h><name/><stored_component/><sys_class_name>par_dashboard_widget</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2025-03-13 01:29:40</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>1bdf0ab8831022104e27cd19feaad341</sys_id><sys_mod_count>0</sys_mod_count><sys_name/><sys_overrides/><sys_package display_value="Steam" source="x_941875_steam">b6ce0238831022104e27cd19feaad338</sys_package><sys_policy/><sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope><sys_update_name>par_dashboard_widget_1bdf0ab8831022104e27cd19feaad341</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2025-03-13 01:29:40</sys_updated_on><visualization/><w>47</w><widget_props/><x>0</x><y>0</y></par_dashboard_widget></record_update>]]></payload>
+        <payload_hash>-1736587847</payload_hash>
+        <record_name/>
+        <reverted_from/>
+        <source>72ce0238831022104e27cd19feaad33d</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-13 01:29:40</sys_created_on>
+        <sys_id>57df0ab8831022104e27cd19feaad343</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1958d1f1b0c0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-13 01:29:40</sys_updated_on>
+        <type>PAR Dashboard Widget</type>
+        <update_guid>5bdf0ab809102210f47401cb6804f642</update_guid>
+        <update_guid_history>5bdf0ab809102210f47401cb6804f642:-1736587847</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="">93df0ab8831022104e27cd19feaad36e</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-13 01:29:41</sys_created_on>
+        <sys_db_object display_value="" name="par_dashboard_widget">par_dashboard_widget</sys_db_object>
+        <sys_id>15f8105645e845d4afc51d215002ce10</sys_id>
+        <sys_metadata>1bdf0ab8831022104e27cd19feaad341</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Steam" source="x_941875_steam">b6ce0238831022104e27cd19feaad338</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
+        <sys_scope_delete display_value="">72783aaf593a4ad7b4ec94a28a9cfca1</sys_scope_delete>
+        <sys_update_name>par_dashboard_widget_1bdf0ab8831022104e27cd19feaad341</sys_update_name>
+        <sys_update_version display_value="par_dashboard_widget_1bdf0ab8831022104e27cd19feaad341">57df0ab8831022104e27cd19feaad343</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-13 01:29:41</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

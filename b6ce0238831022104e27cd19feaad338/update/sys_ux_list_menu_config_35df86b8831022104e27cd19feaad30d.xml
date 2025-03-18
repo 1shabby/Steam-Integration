@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ux_list_menu_config">
+    <sys_ux_list_menu_config action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description/>
+        <name>Steam Workspace_menu_config</name>
+        <sys_class_name>sys_ux_list_menu_config</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-13 01:29:35</sys_created_on>
+        <sys_id>35df86b8831022104e27cd19feaad30d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Steam Workspace_menu_config</sys_name>
+        <sys_package display_value="Steam" source="x_941875_steam">b6ce0238831022104e27cd19feaad338</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
+        <sys_update_name>sys_ux_list_menu_config_35df86b8831022104e27cd19feaad30d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-13 01:29:35</sys_updated_on>
+    </sys_ux_list_menu_config>
+</record_update>
