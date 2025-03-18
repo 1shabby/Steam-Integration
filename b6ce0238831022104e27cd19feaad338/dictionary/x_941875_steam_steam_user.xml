@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="8c0cca51835022104e27cd19feaad351" extends="sys_user" label="Steam User" max_length="40" name="x_941875_steam_steam_user" type="collection">
+        <element label="Country Code" max_length="40" name="country_code" type="string"/>
+        <element label="Profile Url" max_length="1024" name="profile_url" type="url"/>
+        <element display="true" label="Persona Name" max_length="40" name="persona_name" type="string"/>
+        <element label="Avatar Hash" max_length="40" name="avatar_hash" type="string"/>
+        <element label="steam id" max_length="40" name="steam_id" type="string"/>
+        <element label="Account Created" max_length="40" name="account_created" type="string"/>
+    </element>
+</database>
