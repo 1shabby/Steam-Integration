@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="5da79726835022104e27cd19feaad339" label="Steam Games" max_length="40" name="x_941875_steam_steam_games" type="collection">
+        <element label="Steam Deck Playtime" max_length="255" name="playtime_deck_forever" type="glide_date_time"/>
+        <element label="Windows Playtime" max_length="255" name="playtime_windows_forever" type="glide_date_time"/>
+        <element label="Last Played" max_length="255" name="rtime_last_played" type="glide_date_time"/>
+        <element label="Mac Playtime" max_length="255" name="playtime_mac_forever" type="glide_date_time"/>
+        <element label="Total Playtime" max_length="255" name="playtime_forever" type="glide_date_time"/>
+        <element label="Linux Playtime" max_length="255" name="playtime_linux_forever" type="glide_date_time"/>
+        <element label="App id" max_length="40" name="appid" type="string"/>
+        <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <index name="index">
+            <element name="sys_class_name"/>
+        </index>
+    </element>
+</database>
