@@ -16,11 +16,12 @@
         <flow_priority/>
         <ih_action>true</ih_action>
         <internal_name>steam__get_play_summary</internal_name>
-        <label_cache>[{"name":"{{action.steam_id}}","label":"action➛Steam ID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[dc7bb318-07ba-42be-83c7-905f525c5fc8].key}}","label":"step➛Script step➛Key","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]</label_cache>
+        <label_cache>[{"name":"{{action.steam_id}}","label":"action➛Steam ID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[dc7bb318-07ba-42be-83c7-905f525c5fc8].key}}","label":"step➛Script step➛Key","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[31939060-73f0-4389-8176-9a25bbead04e].root}}","label":"step➛JSON Parser step➛root","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[8953bd19-222a-4044-9773-a2ebf28e204c].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}}]</label_cache>
         <master_snapshot>0cf1e762839022104e27cd19feaad367</master_snapshot>
         <master_snapshot_digest/>
-        <name>Steam - Get Play Summary</name>
+        <name>Steam - Get Player Summary</name>
         <natlang/>
+        <outputs/>
         <outputs/>
         <pre_compiled>false</pre_compiled>
         <state>published</state>
@@ -30,15 +31,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>bb609baa831022104e27cd19feaad3c1</sys_id>
-        <sys_mod_count>9</sys_mod_count>
-        <sys_name>Steam - Get Play Summary</sys_name>
+        <sys_mod_count>12</sys_mod_count>
+        <sys_name>Steam - Get Player Summary</sys_name>
         <sys_overrides/>
         <sys_package display_value="Steam" source="x_941875_steam">b6ce0238831022104e27cd19feaad338</sys_package>
         <sys_policy/>
         <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_bb609baa831022104e27cd19feaad3c1</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-18 17:57:39</sys_updated_on>
+        <sys_updated_on>2025-03-19 15:49:02</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -52,10 +53,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-03-18 16:50:07</sys_created_on>
         <sys_id>87721f6e831022104e27cd19feaad3f3</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-18 16:50:07</sys_updated_on>
-        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
+        <sys_updated_on>2025-03-19 15:17:24</sys_updated_on>
+        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON"}</value>
         <variable display_value="Action Status">7e721f6e831022104e27cd19feaad3c9</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -72,10 +73,677 @@
         <value>0</value>
         <variable display_value="Don't Treat as Error">b2721f6e831022104e27cd19feaad3cf</variable>
     </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_output_bb609baa831022104e27cd19feaad3c1^id=bb609baa831022104e27cd19feaad3c1"/>
-    <sys_hub_step_instance action="delete_multiple" query="action=bb609baa831022104e27cd19feaad3c1^sys_idNOT IN98855b62835022104e27cd19feaad319,aa721f6e831022104e27cd19feaad391"/>
+    <sys_element_mapping action="delete_multiple" query="id=bb609baa831022104e27cd19feaad3c1"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>Response</field>
+        <id>bb609baa831022104e27cd19feaad3c1</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 15:48:58</sys_created_on>
+        <sys_id>0d1ec40fc31caa1074b579ec050131af</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 15:48:58</sys_updated_on>
+        <table>var__m_sys_hub_action_output_bb609baa831022104e27cd19feaad3c1</table>
+        <value>{{step[31939060-73f0-4389-8176-9a25bbead04e].root}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__action_status__</field>
+        <id>bb609baa831022104e27cd19feaad3c1</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 15:17:24</sys_created_on>
+        <sys_id>2ed604cbc3d8aa1074b579ec0501318e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 15:17:24</sys_updated_on>
+        <table>var__m_sys_hub_action_output_bb609baa831022104e27cd19feaad3c1</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=bb609baa831022104e27cd19feaad3c1^sys_idNOT IN341ec40fc31caa1074b579ec05013183,883c008bc31caa1074b579ec0501317b,98855b62835022104e27cd19feaad319"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="Steam - Get Play Summary">bb609baa831022104e27cd19feaad3c1</action>
+        <action display_value="Steam - Get Player Summary">bb609baa831022104e27cd19feaad3c1</action>
+        <cid>31939060-73f0-4389-8176-9a25bbead04e</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>JSON Parser step</label>
+        <order>3</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="JSON Parser">502328c387523300f917e55936cb0bf0</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 15:48:57</sys_created_on>
+        <sys_id>341ec40fc31caa1074b579ec05013183</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 15:48:58</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=341ec40fc31caa1074b579ec05013183"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>341ec40fc31caa1074b579ec05013183</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 15:48:58</sys_created_on>
+        <sys_id>091ec40fc31caa1074b579ec0501319d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 15:48:58</sys_updated_on>
+        <value>{"response":{"players":[{"steamid":"76561198139539478","communityvisibilitystate":3,"profilestate":1,"personaname":"1shabbymn","profileurl":"https://steamcommunity.com/profiles/76561198139539478/","avatar":"https://avatars.steamstatic.com/67b35a817fd677a80e8d549a398f075a34c4f1ec.jpg","avatarmedium":"https://avatars.steamstatic.com/67b35a817fd677a80e8d549a398f075a34c4f1ec_medium.jpg","avatarfull":"https://avatars.steamstatic.com/67b35a817fd677a80e8d549a398f075a34c4f1ec_full.jpg","avatarhash":"67b35a817fd677a80e8d549a398f075a34c4f1ec","lastlogoff":1742362249,"personastate":0,"primaryclanid":"103582791429521408","timecreated":1402096693,"personastateflags":0,"loccountrycode":"US"}]}}</value>
+        <variable display_value="Sample payload">d335ac0787523300f917e55936cb0b1d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>341ec40fc31caa1074b579ec05013183</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 15:48:58</sys_created_on>
+        <sys_id>451ec40fc31caa1074b579ec0501319d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 15:48:58</sys_updated_on>
+        <value>{"name":"root","children":[{"name":"response","children":[{"name":"players","children":[{"name":"players_object","children":[{"name":"steamid","children":[],"type":"string","jpath":"$.response.players[*].steamid","previewValue":"76561198139539478"},{"name":"communityvisibilitystate","children":[],"type":"string","jpath":"$.response.players[*].communityvisibilitystate","previewValue":"3"},{"name":"profilestate","children":[],"type":"string","jpath":"$.response.players[*].profilestate","previewValue":"1"},{"name":"personaname","children":[],"type":"string","jpath":"$.response.players[*].personaname","previewValue":"1shabbymn"},{"name":"profileurl","children":[],"type":"string","jpath":"$.response.players[*].profileurl","previewValue":"https://steamcommunity.com/profiles/76561198139539478/"},{"name":"avatar","children":[],"type":"string","jpath":"$.response.players[*].avatar","previewValue":"https://avatars.steamstatic.com/67b35a817fd677a80e8d549a398f075a34c4f1ec.jpg"},{"name":"avatarmedium","children":[],"type":"string","jpath":"$.response.players[*].avatarmedium","previewValue":"https://avatars.steamstatic.com/67b35a817fd677a80e8d549a398f075a34c4f1ec_medium.jpg"},{"name":"avatarfull","children":[],"type":"string","jpath":"$.response.players[*].avatarfull","previewValue":"https://avatars.steamstatic.com/67b35a817fd677a80e8d549a398f075a34c4f1ec_full.jpg"},{"name":"avatarhash","children":[],"type":"string","jpath":"$.response.players[*].avatarhash","previewValue":"67b35a817fd677a80e8d549a398f075a34c4f1ec"},{"name":"lastlogoff","children":[],"type":"string","jpath":"$.response.players[*].lastlogoff","previewValue":"1742362249"},{"name":"personastate","children":[],"type":"string","jpath":"$.response.players[*].personastate","previewValue":"0"},{"name":"primaryclanid","children":[],"type":"string","jpath":"$.response.players[*].primaryclanid","previewValue":"103582791429521408"},{"name":"timecreated","children":[],"type":"string","jpath":"$.response.players[*].timecreated","previewValue":"1402096693"},{"name":"personastateflags","children":[],"type":"string","jpath":"$.response.players[*].personastateflags","previewValue":"0"},{"name":"loccountrycode","children":[],"type":"string","jpath":"$.response.players[*].loccountrycode","previewValue":"US"}],"type":"object","jpath":"$.response.players[*]","previewValue":""}],"type":"array.object","jpath":"$.response.players[*]","previewValue":""}],"type":"object","jpath":"$.response","previewValue":""}],"type":"object","jpath":"$","previewValue":""}</value>
+        <variable display_value="Target">4674240787523300f917e55936cb0b0e</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_341ec40fc31caa1074b579ec05013183^id=341ec40fc31caa1074b579ec05013183"/>
+    <sys_element_mapping action="delete_multiple" query="id=341ec40fc31caa1074b579ec05013183"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sample_payload</field>
+        <id>341ec40fc31caa1074b579ec05013183</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 15:48:58</sys_created_on>
+        <sys_id>c11ec40fc31caa1074b579ec0501319d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 15:48:58</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>source_data</field>
+        <id>341ec40fc31caa1074b579ec05013183</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 15:48:58</sys_created_on>
+        <sys_id>011ec40fc31caa1074b579ec0501319d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 15:48:58</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value>{{step[8953bd19-222a-4044-9773-a2ebf28e204c].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>target_schema</field>
+        <id>341ec40fc31caa1074b579ec05013183</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 15:48:58</sys_created_on>
+        <sys_id>4d1ec40fc31caa1074b579ec0501319c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 15:48:58</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_translated_text action="delete_multiple" query="documentkey=341ec40fc31caa1074b579ec05013183"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=341ec40fc31caa1074b579ec05013183"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=341ec40fc31caa1074b579ec05013183^sys_idNOT INbc1ec40fc31caa1074b579ec05013187"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDf81ec40f911caa1089f4848afb68fd86</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>b6ce0238831022104e27cd19feaad338</scope_name>
+        <serialized_content>{"FlowDesigner:FDf81ec40f911caa1089f4848afb68fd86":{"response":{"players":[{"$0_players":{"personastate":"String","personastate.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"personastate\",\"mandatory\":\"false\",\"order\":\"11\",\"max_length\":\"0\",\"uiUniqueId\":\"fdb71c68-07d5-4c94-a22a-3d4dd22599d4\"}"},"profileurl":"String","profileurl.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"profileurl\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\",\"uiUniqueId\":\"49599a05-776d-435f-aeb3-b98098cef5fa\"}"},"profilestate":"String","profilestate.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"profilestate\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"32ac3f44-0194-45c4-acf0-eb4271ebe438\"}"},"primaryclanid":"String","primaryclanid.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"primaryclanid\",\"mandatory\":\"false\",\"order\":\"12\",\"max_length\":\"0\",\"uiUniqueId\":\"ff75d850-0748-4ac8-83a8-23705109dc75\"}"},"avatarhash":"String","avatarhash.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"avatarhash\",\"mandatory\":\"false\",\"order\":\"9\",\"max_length\":\"0\",\"uiUniqueId\":\"b99d3b81-fe9d-4391-9f42-f35d94954d8f\"}"},"avatarfull":"String","avatarfull.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"avatarfull\",\"mandatory\":\"false\",\"order\":\"8\",\"max_length\":\"0\",\"uiUniqueId\":\"ca18f058-2825-45b0-a99c-5346bb6ebea2\"}"},"avatarmedium":"String","avatarmedium.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"avatarmedium\",\"mandatory\":\"false\",\"order\":\"7\",\"max_length\":\"0\",\"uiUniqueId\":\"74a514f5-f3c7-45ab-ad0b-631257814953\"}"},"avatar":"String","avatar.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"avatar\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\",\"uiUniqueId\":\"947c0c98-da61-41f7-90cf-be891b50e06f\"}"},"personaname":"String","personaname.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"personaname\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"1205893b-e767-4fd8-8a55-e1f67ec0b7ed\"}"},"personastateflags":"String","personastateflags.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"personastateflags\",\"mandatory\":\"false\",\"order\":\"14\",\"max_length\":\"0\",\"uiUniqueId\":\"5ed6346e-93a6-4796-99a8-bbb4ca47b6b0\"}"},"steamid":"String","steamid.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"steamid\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"8eca3a92-33c9-4aaf-8148-452ac5ae0cda\"}"},"timecreated":"String","timecreated.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"timecreated\",\"mandatory\":\"false\",\"order\":\"13\",\"max_length\":\"0\",\"uiUniqueId\":\"7f39937a-27cd-4a3c-8f27-8cb255d3a2d2\"}"},"lastlogoff":"String","lastlogoff.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"lastlogoff\",\"mandatory\":\"false\",\"order\":\"10\",\"max_length\":\"0\",\"uiUniqueId\":\"cfc475da-fada-43ac-83ee-836f0be6ab7f\"}"},"loccountrycode":"String","loccountrycode.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"loccountrycode\",\"mandatory\":\"false\",\"order\":\"15\",\"max_length\":\"0\",\"uiUniqueId\":\"6778e6e7-7f4b-4944-a1ee-5a56a4cf0332\"}"},"communityvisibilitystate":"String","communityvisibilitystate.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"communityvisibilitystate\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"87d6943d-3bd5-49a3-9867-4cf38eab76fc\"}"}}}],"players.$field_facets":{"SimpleMapFacet":"{\"choiceOption\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"players\",\"mandatory\":\"false\",\"child_name\":\"players_object\",\"uiUniqueId\":\"c64ddb97-414f-4dd8-8570-b2c5dd40a303\",\"uiTypeLabel\":\"Array.Object\",\"child_label\":\"players_object\",\"child_type_label\":\"Object\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"0\",\"child_uiUniqueId\":\"55909677-cde5-4c2e-8c9c-671cee4dbcb3\"}"}},"response.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"response\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"bd849ac4-0ff7-46fc-b32b-790d64e87be0\"}"}},"FlowDesigner:FDf81ec40f911caa1089f4848afb68fd86.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"root\",\"mandatory\":\"false\",\"uiUniqueId\":\"ef5ad6c1-03ba-4693-889c-a575107573a8\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDf81ec40f911caa1089f4848afb68fd86\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"0\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 15:48:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>bc1ec40fc31caa1074b579ec05013186</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 15:48:58</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FDf81ec40f911caa1089f4848afb68fd86,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=ef5ad6c1-03ba-4693-889c-a575107573a8</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>root</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>root</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="JSON Parser step">341ec40fc31caa1074b579ec05013183</model>
+        <model_id>341ec40fc31caa1074b579ec05013183</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_341ec40fc31caa1074b579ec05013183</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 15:48:58</sys_created_on>
+        <sys_id>bc1ec40fc31caa1074b579ec05013187</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 15:48:58</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=341ec40fc31caa1074b579ec05013183"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>root</element>
+        <help/>
+        <hint/>
+        <label>root</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_341ec40fc31caa1074b579ec05013183</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 15:48:58</sys_created_on>
+        <sys_id>051ec40fc31caa1074b579ec05013197</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Steam" source="x_941875_steam">b6ce0238831022104e27cd19feaad338</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 15:48:58</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Steam - Get Player Summary">bb609baa831022104e27cd19feaad3c1</action>
+        <cid>8953bd19-222a-4044-9773-a2ebf28e204c</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>REST step</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 15:40:43</sys_created_on>
+        <sys_id>883c008bc31caa1074b579ec0501317b</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 15:48:57</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=883c008bc31caa1074b579ec0501317b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>883c008bc31caa1074b579ec0501317b</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 15:40:43</sys_created_on>
+        <sys_id>103c008bc31caa1074b579ec0501319b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 15:40:43</sys_updated_on>
+        <value>ef751ff07301330025d71afe2ff6a7f9</value>
+        <variable display_value="Retry Policy">37be397587c03300a8cc7d5e27cb0ba2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>883c008bc31caa1074b579ec0501317b</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 15:40:43</sys_created_on>
+        <sys_id>183c008bc31caa1074b579ec0501319c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 15:40:43</sys_updated_on>
+        <value/>
+        <variable display_value="Connection Timeout">7a59009bc7522010820469467ec260c0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>883c008bc31caa1074b579ec0501317b</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 15:40:43</sys_created_on>
+        <sys_id>1c3c008bc31caa1074b579ec0501319b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 15:40:43</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="Capabilities">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>883c008bc31caa1074b579ec0501317b</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 15:40:43</sys_created_on>
+        <sys_id>543c008bc31caa1074b579ec0501319c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 15:40:43</sys_updated_on>
+        <value>{}</value>
+        <variable display_value="Query Parameters">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>883c008bc31caa1074b579ec0501317b</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 15:40:43</sys_created_on>
+        <sys_id>583c008bc31caa1074b579ec0501319b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 15:40:43</sys_updated_on>
+        <value>/ISteamUser/GetPlayerSummaries/v0002/?</value>
+        <variable display_value="Resource Path">3d090af03b23320057a4a2e334efc455</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>883c008bc31caa1074b579ec0501317b</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 15:40:43</sys_created_on>
+        <sys_id>903c008bc31caa1074b579ec0501319c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 15:40:43</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>883c008bc31caa1074b579ec0501317b</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 15:40:43</sys_created_on>
+        <sys_id>943c008bc31caa1074b579ec0501319b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 15:40:43</sys_updated_on>
+        <value>c2a0d7ea831022104e27cd19feaad332</value>
+        <variable display_value="Connection Alias">262882f03b23320057a4a2e334efc4f0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>883c008bc31caa1074b579ec0501317b</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 15:40:43</sys_created_on>
+        <sys_id>d03c008bc31caa1074b579ec0501319b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 15:40:43</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Query Params">58715a1c53f22010d3a8ddeeff7b1248</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>883c008bc31caa1074b579ec0501317b</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 15:40:43</sys_created_on>
+        <sys_id>d43c008bc31caa1074b579ec0501319a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 15:40:43</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Headers">15288f755bd24110ab933520b881c713</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>883c008bc31caa1074b579ec0501317b</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 15:40:43</sys_created_on>
+        <sys_id>dc3c008bc31caa1074b579ec0501319b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 15:40:43</sys_updated_on>
+        <value>http://api.steampowered.com</value>
+        <variable display_value="Base URL">a67a8ef03b23320057a4a2e334efc472</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>883c008bc31caa1074b579ec0501317b</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 15:48:57</sys_created_on>
+        <sys_id>f41ec40fc31caa1074b579ec0501317f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 15:48:57</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="Headers">371837f1c71003007b237f48cb9763b0</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_883c008bc31caa1074b579ec0501317b^id=883c008bc31caa1074b579ec0501317b"/>
+    <sys_element_mapping action="delete_multiple" query="id=883c008bc31caa1074b579ec0501317b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>883c008bc31caa1074b579ec0501317b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 15:40:43</sys_created_on>
+        <sys_id>dc3c008bc31caa1074b579ec05013199</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 15:40:43</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>base_url</field>
+        <id>883c008bc31caa1074b579ec0501317b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 15:40:43</sys_created_on>
+        <sys_id>1c3c008bc31caa1074b579ec05013199</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 15:40:43</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>capabilities</field>
+        <id>883c008bc31caa1074b579ec0501317b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 15:40:43</sys_created_on>
+        <sys_id>583c008bc31caa1074b579ec05013199</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 15:40:43</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_alias</field>
+        <id>883c008bc31caa1074b579ec0501317b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 15:40:43</sys_created_on>
+        <sys_id>d03c008bc31caa1074b579ec05013199</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 15:40:43</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_timeout</field>
+        <id>883c008bc31caa1074b579ec0501317b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 15:40:43</sys_created_on>
+        <sys_id>543c008bc31caa1074b579ec0501319a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 15:40:43</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>headers</field>
+        <id>883c008bc31caa1074b579ec0501317b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 15:48:57</sys_created_on>
+        <sys_id>741ec40fc31caa1074b579ec0501317f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 15:48:57</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>honor_duplicate_headers</field>
+        <id>883c008bc31caa1074b579ec0501317b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 15:40:43</sys_created_on>
+        <sys_id>943c008bc31caa1074b579ec05013198</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 15:40:43</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>honor_duplicate_query_params</field>
+        <id>883c008bc31caa1074b579ec0501317b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 15:40:43</sys_created_on>
+        <sys_id>103c008bc31caa1074b579ec05013199</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 15:40:43</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>query_params</field>
+        <id>883c008bc31caa1074b579ec0501317b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 15:40:43</sys_created_on>
+        <sys_id>903c008bc31caa1074b579ec0501319a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 15:40:43</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{"type":"ADV_NV","value":[{"name":"key","value":"{{step[dc7bb318-07ba-42be-83c7-905f525c5fc8].key}}","attributes":{"omit_if_empty":false,"mandatory":false}},{"name":"steamids","value":"{{action.steam_id}}","attributes":{"omit_if_empty":false,"mandatory":false}}]}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>resource_path</field>
+        <id>883c008bc31caa1074b579ec0501317b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 15:40:43</sys_created_on>
+        <sys_id>943c008bc31caa1074b579ec05013199</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 15:40:43</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>retry_policy</field>
+        <id>883c008bc31caa1074b579ec0501317b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 15:40:43</sys_created_on>
+        <sys_id>5c3c008bc31caa1074b579ec05013198</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 15:40:43</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_translated_text action="delete_multiple" query="documentkey=883c008bc31caa1074b579ec0501317b"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=883c008bc31caa1074b579ec0501317b"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=883c008bc31caa1074b579ec0501317b^sys_idNOT IN483c008bc31caa1074b579ec05013188"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isLocal=true,uiType=password2,uiTypeLabel=Password (2 Way Encrypted),uiUniqueId=dd06f548-5811-4aaf-8831-9290d8a38af3</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sn_auth_token</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">password2</internal_type>
+        <label>Credential Value</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="REST step">883c008bc31caa1074b579ec0501317b</model>
+        <model_id>883c008bc31caa1074b579ec0501317b</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_883c008bc31caa1074b579ec0501317b</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 15:40:43</sys_created_on>
+        <sys_id>483c008bc31caa1074b579ec05013188</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 15:48:57</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=883c008bc31caa1074b579ec0501317b"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>sn_auth_token</element>
+        <help/>
+        <hint/>
+        <label>Credential Value</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_883c008bc31caa1074b579ec0501317b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 15:40:43</sys_created_on>
+        <sys_id>cc3c008bc31caa1074b579ec0501318b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Steam" source="x_941875_steam">b6ce0238831022104e27cd19feaad338</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 15:40:43</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Steam - Get Player Summary">bb609baa831022104e27cd19feaad3c1</action>
         <cid>dc7bb318-07ba-42be-83c7-905f525c5fc8</cid>
         <error_handling_type>1</error_handling_type>
         <extended_inputs/>
@@ -90,10 +758,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-03-18 17:03:18</sys_created_on>
         <sys_id>98855b62835022104e27cd19feaad319</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-18 17:03:19</sys_updated_on>
+        <sys_updated_on>2025-03-19 15:17:23</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=98855b62835022104e27cd19feaad319"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -118,11 +786,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-03-18 17:03:19</sys_created_on>
         <sys_id>1c855b62835022104e27cd19feaad35d</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-18 17:03:19</sys_updated_on>
+        <sys_updated_on>2025-03-19 15:17:23</sys_updated_on>
         <value>(function execute(inputs, outputs) {&#13;
-&#13;
 outputs.key = gs.getProperty("x_941875_steam.key"); // Steam key stored in Sys_property&#13;
 })(inputs, outputs);&#13;
 </value>
@@ -217,7 +884,6 @@ outputs.key = gs.getProperty("x_941875_steam.key"); // Steam key stored in Sys_p
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
     <sys_hub_input_scripts action="delete_multiple" query="instance=98855b62835022104e27cd19feaad319"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_98855b62835022104e27cd19feaad319^sys_idNOT IN9c855b62835022104e27cd19feaad323"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>key</element>
         <help/>
@@ -238,428 +904,6 @@ outputs.key = gs.getProperty("x_941875_steam.key"); // Steam key stored in Sys_p
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2025-03-18 17:03:19</sys_updated_on>
-        <url/>
-        <url_target/>
-    </sys_documentation>
-    <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="Steam - Get Play Summary">bb609baa831022104e27cd19feaad3c1</action>
-        <cid>51f7b41b-4166-481f-b0d3-2162954530cd</cid>
-        <error_handling_type>1</error_handling_type>
-        <extended_inputs/>
-        <extended_outputs/>
-        <icon/>
-        <inputs/>
-        <inputs/>
-        <label>REST step</label>
-        <order>2</order>
-        <outputs/>
-        <section/>
-        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-03-18 16:50:05</sys_created_on>
-        <sys_id>aa721f6e831022104e27cd19feaad391</sys_id>
-        <sys_mod_count>4</sys_mod_count>
-        <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-18 17:04:49</sys_updated_on>
-    </sys_hub_step_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=aa721f6e831022104e27cd19feaad391"/>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_step_instance</document>
-        <document_key>aa721f6e831022104e27cd19feaad391</document_key>
-        <order>13</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-03-18 16:50:06</sys_created_on>
-        <sys_id>36721f6e831022104e27cd19feaad3c4</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-18 16:50:06</sys_updated_on>
-        <value>18409d8007482000dada43c0d1021e8f</value>
-        <variable display_value="Capabilities">c30a451d2f201300a09a839fb18c95b4</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_step_instance</document>
-        <document_key>aa721f6e831022104e27cd19feaad391</document_key>
-        <order>30</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-03-18 17:03:20</sys_created_on>
-        <sys_id>68855b62835022104e27cd19feaad37b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-18 17:03:20</sys_updated_on>
-        <value>{"type":"ADV_NV","value":[]}</value>
-        <variable display_value="Headers">371837f1c71003007b237f48cb9763b0</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_step_instance</document>
-        <document_key>aa721f6e831022104e27cd19feaad391</document_key>
-        <order>100</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-03-18 16:50:06</sys_created_on>
-        <sys_id>72721f6e831022104e27cd19feaad3c3</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-18 16:50:06</sys_updated_on>
-        <value>1</value>
-        <variable display_value="Honor Duplicate Headers">15288f755bd24110ab933520b881c713</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_step_instance</document>
-        <document_key>aa721f6e831022104e27cd19feaad391</document_key>
-        <order>10</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-03-18 16:50:06</sys_created_on>
-        <sys_id>72721f6e831022104e27cd19feaad3c4</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-18 16:50:06</sys_updated_on>
-        <value>c2a0d7ea831022104e27cd19feaad332</value>
-        <variable display_value="Connection Alias">262882f03b23320057a4a2e334efc4f0</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_step_instance</document>
-        <document_key>aa721f6e831022104e27cd19feaad391</document_key>
-        <order>100</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-03-18 16:50:06</sys_created_on>
-        <sys_id>7e721f6e831022104e27cd19feaad3c4</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-18 16:50:06</sys_updated_on>
-        <value/>
-        <variable display_value="Connection Timeout">7a59009bc7522010820469467ec260c0</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_step_instance</document>
-        <document_key>aa721f6e831022104e27cd19feaad391</document_key>
-        <order>20</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-03-18 17:03:20</sys_created_on>
-        <sys_id>a4855b62835022104e27cd19feaad37b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-18 17:03:20</sys_updated_on>
-        <value>/ISteamUser/GetPlayerSummaries/v0002/?</value>
-        <variable display_value="Resource Path">3d090af03b23320057a4a2e334efc455</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_step_instance</document>
-        <document_key>aa721f6e831022104e27cd19feaad391</document_key>
-        <order>12</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-03-18 16:50:06</sys_created_on>
-        <sys_id>ba721f6e831022104e27cd19feaad3c4</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-18 16:50:06</sys_updated_on>
-        <value>35aa573fd7802200bdbaee5b5e610375</value>
-        <variable display_value="MID Application">f11ebf865f101300a09a2abd7f466652</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_step_instance</document>
-        <document_key>aa721f6e831022104e27cd19feaad391</document_key>
-        <order>100</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-03-18 16:50:06</sys_created_on>
-        <sys_id>be721f6e831022104e27cd19feaad3c3</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-18 16:50:06</sys_updated_on>
-        <value>1</value>
-        <variable display_value="Honor Duplicate Query Params">58715a1c53f22010d3a8ddeeff7b1248</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_step_instance</document>
-        <document_key>aa721f6e831022104e27cd19feaad391</document_key>
-        <order>25</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-03-18 17:03:20</sys_created_on>
-        <sys_id>e4855b62835022104e27cd19feaad37c</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-18 17:03:20</sys_updated_on>
-        <value>{}</value>
-        <variable display_value="Query Parameters">4328e2fb47222200b4fad7527c9a7164</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_step_instance</document>
-        <document_key>aa721f6e831022104e27cd19feaad391</document_key>
-        <order>15</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-03-18 16:50:06</sys_created_on>
-        <sys_id>f6721f6e831022104e27cd19feaad3c4</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-18 17:03:20</sys_updated_on>
-        <value>http://api.steampowered.com</value>
-        <variable display_value="Base URL">a67a8ef03b23320057a4a2e334efc472</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_step_instance</document>
-        <document_key>aa721f6e831022104e27cd19feaad391</document_key>
-        <order>400</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-03-18 16:50:06</sys_created_on>
-        <sys_id>fa721f6e831022104e27cd19feaad3c3</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-18 16:50:06</sys_updated_on>
-        <value>ef751ff07301330025d71afe2ff6a7f9</value>
-        <variable display_value="Retry Policy">37be397587c03300a8cc7d5e27cb0ba2</variable>
-    </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_aa721f6e831022104e27cd19feaad391^id=aa721f6e831022104e27cd19feaad391"/>
-    <sys_element_mapping action="delete_multiple" query="id=aa721f6e831022104e27cd19feaad391"/>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>application</field>
-        <id>aa721f6e831022104e27cd19feaad391</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-03-18 16:50:06</sys_created_on>
-        <sys_id>3e721f6e831022104e27cd19feaad3c2</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-18 16:50:06</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>base_url</field>
-        <id>aa721f6e831022104e27cd19feaad391</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-03-18 16:50:06</sys_created_on>
-        <sys_id>7a721f6e831022104e27cd19feaad3c2</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-18 16:50:06</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>capabilities</field>
-        <id>aa721f6e831022104e27cd19feaad391</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-03-18 16:50:06</sys_created_on>
-        <sys_id>b6721f6e831022104e27cd19feaad3c2</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-18 16:50:06</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>connection_alias</field>
-        <id>aa721f6e831022104e27cd19feaad391</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-03-18 16:50:06</sys_created_on>
-        <sys_id>f2721f6e831022104e27cd19feaad3c2</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-18 16:50:06</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>connection_timeout</field>
-        <id>aa721f6e831022104e27cd19feaad391</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-03-18 16:50:06</sys_created_on>
-        <sys_id>fe721f6e831022104e27cd19feaad3c2</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-18 16:50:06</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>headers</field>
-        <id>aa721f6e831022104e27cd19feaad391</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-03-18 17:03:20</sys_created_on>
-        <sys_id>ec855b62835022104e27cd19feaad37a</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-18 17:03:20</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>honor_duplicate_headers</field>
-        <id>aa721f6e831022104e27cd19feaad391</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-03-18 16:50:06</sys_created_on>
-        <sys_id>76721f6e831022104e27cd19feaad3c1</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-18 16:50:06</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>honor_duplicate_query_params</field>
-        <id>aa721f6e831022104e27cd19feaad391</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-03-18 16:50:06</sys_created_on>
-        <sys_id>32721f6e831022104e27cd19feaad3c2</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-18 16:50:06</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>query_params</field>
-        <id>aa721f6e831022104e27cd19feaad391</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-03-18 17:03:20</sys_created_on>
-        <sys_id>24855b62835022104e27cd19feaad37b</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-18 17:04:49</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
-        <value>{"type":"ADV_NV","value":[{"name":"key","value":"{{step[dc7bb318-07ba-42be-83c7-905f525c5fc8].key}}","attributes":{"omit_if_empty":false,"mandatory":false}},{"name":"steamids","value":"76561198139539478","attributes":{"omit_if_empty":false,"mandatory":false}}]}</value>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>resource_path</field>
-        <id>aa721f6e831022104e27cd19feaad391</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-03-18 17:03:20</sys_created_on>
-        <sys_id>2c855b62835022104e27cd19feaad37a</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-18 17:03:20</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_element_mapping action="INSERT_OR_UPDATE">
-        <field>retry_policy</field>
-        <id>aa721f6e831022104e27cd19feaad391</id>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-03-18 16:50:06</sys_created_on>
-        <sys_id>7e721f6e831022104e27cd19feaad3c1</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-18 16:50:06</sys_updated_on>
-        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
-        <value/>
-    </sys_element_mapping>
-    <sys_translated_text action="delete_multiple" query="documentkey=aa721f6e831022104e27cd19feaad391"/>
-    <sys_hub_step_ext_input action="delete_multiple" query="model=aa721f6e831022104e27cd19feaad391"/>
-    <sys_hub_step_ext_output action="delete_multiple" query="model=aa721f6e831022104e27cd19feaad391^sys_idNOT IN2a721f6e831022104e27cd19feaad39f"/>
-    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
-        <active>true</active>
-        <array>false</array>
-        <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isLocal=true,uiType=password2,uiTypeLabel=Password (2 Way Encrypted),uiUniqueId=759a08b0-491d-4c23-8375-0991ebdb6439</attributes>
-        <audit>false</audit>
-        <calculation><![CDATA[(function calculatedFieldValue(current) {
-
-	// Add your code here
-	return '';  // return the calculated value
-
-})(current);]]></calculation>
-        <choice/>
-        <choice_field/>
-        <choice_table/>
-        <column_label/>
-        <comments/>
-        <create_roles/>
-        <default_value/>
-        <defaultsort/>
-        <delete_roles/>
-        <dependent/>
-        <dependent_on_field/>
-        <display>false</display>
-        <dynamic_creation>false</dynamic_creation>
-        <dynamic_creation_script/>
-        <dynamic_default_value/>
-        <dynamic_ref_qual/>
-        <element>sn_auth_token</element>
-        <element_reference>false</element_reference>
-        <foreign_database/>
-        <formula/>
-        <function_definition/>
-        <function_field>false</function_field>
-        <help/>
-        <hint/>
-        <internal_type display_value="">password2</internal_type>
-        <label>Credential Value</label>
-        <mandatory>false</mandatory>
-        <max_length>255</max_length>
-        <model display_value="REST step">aa721f6e831022104e27cd19feaad391</model>
-        <model_id>aa721f6e831022104e27cd19feaad391</model_id>
-        <model_table>sys_hub_step_instance</model_table>
-        <name>var__m_sys_hub_step_ext_output_aa721f6e831022104e27cd19feaad391</name>
-        <next_element/>
-        <order>1</order>
-        <primary>false</primary>
-        <read_only>false</read_only>
-        <read_roles/>
-        <reference/>
-        <reference_cascade_rule/>
-        <reference_floats>false</reference_floats>
-        <reference_key/>
-        <reference_qual/>
-        <reference_qual_condition/>
-        <reference_type/>
-        <sizeclass/>
-        <spell_check>false</spell_check>
-        <staged>false</staged>
-        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-03-18 16:50:05</sys_created_on>
-        <sys_id>2a721f6e831022104e27cd19feaad39f</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_name/>
-        <sys_package/>
-        <sys_policy/>
-        <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-18 17:03:19</sys_updated_on>
-        <table_reference>false</table_reference>
-        <text_index>false</text_index>
-        <unique>false</unique>
-        <use_dependent_field>false</use_dependent_field>
-        <use_dynamic_default>false</use_dynamic_default>
-        <use_reference_qualifier>simple</use_reference_qualifier>
-        <virtual>false</virtual>
-        <virtual_type>script</virtual_type>
-        <widget/>
-        <write_roles/>
-        <xml_view>false</xml_view>
-    </sys_hub_step_ext_output>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=aa721f6e831022104e27cd19feaad391"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_aa721f6e831022104e27cd19feaad391^sys_idNOT IN72721f6e831022104e27cd19feaad3a8"/>
-    <sys_documentation action="INSERT_OR_UPDATE">
-        <element>sn_auth_token</element>
-        <help/>
-        <hint/>
-        <label>Credential Value</label>
-        <language>en</language>
-        <name>var__m_sys_hub_step_ext_output_aa721f6e831022104e27cd19feaad391</name>
-        <plural/>
-        <sys_class_name>sys_documentation</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-03-18 16:50:06</sys_created_on>
-        <sys_id>72721f6e831022104e27cd19feaad3a8</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name/>
-        <sys_package display_value="Steam" source="x_941875_steam">b6ce0238831022104e27cd19feaad338</sys_package>
-        <sys_policy/>
-        <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
-        <sys_update_name/>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-18 16:50:06</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -704,7 +948,7 @@ outputs.key = gs.getProperty("x_941875_steam.key"); // Steam key stored in Sys_p
         <label>Steam ID</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Steam - Get Play Summary">bb609baa831022104e27cd19feaad3c1</model>
+        <model display_value="Steam - Get Player Summary">bb609baa831022104e27cd19feaad3c1</model>
         <model_id>bb609baa831022104e27cd19feaad3c1</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_input_bb609baa831022104e27cd19feaad3c1</name>
@@ -748,7 +992,117 @@ outputs.key = gs.getProperty("x_941875_steam.key"); // Steam key stored in Sys_p
         <xml_view>false</xml_view>
     </sys_hub_action_input>
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e3e1a762839022104e27cd19feaad3ca"/>
-    <sys_hub_action_output action="delete_multiple" query="model=bb609baa831022104e27cd19feaad3c1^sys_idNOT IN7e721f6e831022104e27cd19feaad3c9,b2721f6e831022104e27cd19feaad3cf"/>
+    <sys_hub_action_output action="delete_multiple" query="model=bb609baa831022104e27cd19feaad3c1^sys_idNOT IN411ec40fc31caa1074b579ec050131a0,7e721f6e831022104e27cd19feaad3c9,b2721f6e831022104e27cd19feaad3cf"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDc11ec40fa51caa10047a0510bdbbc49f</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>b6ce0238831022104e27cd19feaad338</scope_name>
+        <serialized_content>{"FlowDesigner:FDc11ec40fa51caa10047a0510bdbbc49f":{"response":{"players":[{"$0_players":{"personastate":"String","personastate.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"personastate\",\"mandatory\":\"false\",\"order\":\"11\",\"max_length\":\"0\",\"uiUniqueId\":\"fdb71c68-07d5-4c94-a22a-3d4dd22599d4\"}"},"profileurl":"String","profileurl.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"profileurl\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\",\"uiUniqueId\":\"49599a05-776d-435f-aeb3-b98098cef5fa\"}"},"profilestate":"String","profilestate.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"profilestate\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"32ac3f44-0194-45c4-acf0-eb4271ebe438\"}"},"primaryclanid":"String","primaryclanid.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"primaryclanid\",\"mandatory\":\"false\",\"order\":\"12\",\"max_length\":\"0\",\"uiUniqueId\":\"ff75d850-0748-4ac8-83a8-23705109dc75\"}"},"avatarhash":"String","avatarhash.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"avatarhash\",\"mandatory\":\"false\",\"order\":\"9\",\"max_length\":\"0\",\"uiUniqueId\":\"b99d3b81-fe9d-4391-9f42-f35d94954d8f\"}"},"avatarfull":"String","avatarfull.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"avatarfull\",\"mandatory\":\"false\",\"order\":\"8\",\"max_length\":\"0\",\"uiUniqueId\":\"ca18f058-2825-45b0-a99c-5346bb6ebea2\"}"},"avatarmedium":"String","avatarmedium.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"avatarmedium\",\"mandatory\":\"false\",\"order\":\"7\",\"max_length\":\"0\",\"uiUniqueId\":\"74a514f5-f3c7-45ab-ad0b-631257814953\"}"},"avatar":"String","avatar.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"avatar\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\",\"uiUniqueId\":\"947c0c98-da61-41f7-90cf-be891b50e06f\"}"},"personaname":"String","personaname.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"personaname\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"1205893b-e767-4fd8-8a55-e1f67ec0b7ed\"}"},"personastateflags":"String","personastateflags.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"personastateflags\",\"mandatory\":\"false\",\"order\":\"14\",\"max_length\":\"0\",\"uiUniqueId\":\"5ed6346e-93a6-4796-99a8-bbb4ca47b6b0\"}"},"steamid":"String","steamid.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"steamid\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"8eca3a92-33c9-4aaf-8148-452ac5ae0cda\"}"},"timecreated":"String","timecreated.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"timecreated\",\"mandatory\":\"false\",\"order\":\"13\",\"max_length\":\"0\",\"uiUniqueId\":\"7f39937a-27cd-4a3c-8f27-8cb255d3a2d2\"}"},"lastlogoff":"String","lastlogoff.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"lastlogoff\",\"mandatory\":\"false\",\"order\":\"10\",\"max_length\":\"0\",\"uiUniqueId\":\"cfc475da-fada-43ac-83ee-836f0be6ab7f\"}"},"loccountrycode":"String","loccountrycode.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"loccountrycode\",\"mandatory\":\"false\",\"order\":\"15\",\"max_length\":\"0\",\"uiUniqueId\":\"6778e6e7-7f4b-4944-a1ee-5a56a4cf0332\"}"},"communityvisibilitystate":"String","communityvisibilitystate.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"communityvisibilitystate\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"87d6943d-3bd5-49a3-9867-4cf38eab76fc\"}"}}}],"players.$field_facets":{"SimpleMapFacet":"{\"choiceOption\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"players\",\"mandatory\":\"false\",\"child_name\":\"players_object\",\"uiUniqueId\":\"c64ddb97-414f-4dd8-8570-b2c5dd40a303\",\"uiTypeLabel\":\"Array.Object\",\"child_label\":\"players_object\",\"child_type_label\":\"Object\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"0\",\"child_uiUniqueId\":\"55909677-cde5-4c2e-8c9c-671cee4dbcb3\"}"}},"response.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"response\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"bd849ac4-0ff7-46fc-b32b-790d64e87be0\"}"}},"FlowDesigner:FDc11ec40fa51caa10047a0510bdbbc49f.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"31939060-73f0-4389-8176-9a25bbead04e\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Response\",\"mandatory\":\"true\",\"uiUniqueId\":\"57a800fe-0e62-4d06-931a-6c06ecef4b56\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDc11ec40fa51caa10047a0510bdbbc49f\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"ef5ad6c1-03ba-4693-889c-a575107573a8\",\"sourceType\":\"step\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"0\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 15:48:58</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>851ec40fc31caa1074b579ec0501319f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 15:48:58</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FDc11ec40fa51caa10047a0510bdbbc49f,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,sourceId=31939060-73f0-4389-8176-9a25bbead04e,sourceType=step,sourceUiUniqueId=ef5ad6c1-03ba-4693-889c-a575107573a8,uiType=object,uiTypeLabel=Object,uiUniqueId=57a800fe-0e62-4d06-931a-6c06ecef4b56</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>Response</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Response</label>
+        <mandatory>true</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Steam - Get Player Summary">bb609baa831022104e27cd19feaad3c1</model>
+        <model_id>bb609baa831022104e27cd19feaad3c1</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_bb609baa831022104e27cd19feaad3c1</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 15:48:58</sys_created_on>
+        <sys_id>411ec40fc31caa1074b579ec050131a0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 15:48:58</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=411ec40fc31caa1074b579ec050131a0"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=411ec40fc31caa1074b579ec050131a0"/>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -791,12 +1145,12 @@ outputs.key = gs.getProperty("x_941875_steam.key"); // Steam key stored in Sys_p
         <label>Action Status</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
-        <model display_value="Steam - Get Play Summary">bb609baa831022104e27cd19feaad3c1</model>
+        <model display_value="Steam - Get Player Summary">bb609baa831022104e27cd19feaad3c1</model>
         <model_id>bb609baa831022104e27cd19feaad3c1</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_output_bb609baa831022104e27cd19feaad3c1</name>
         <next_element/>
-        <order>1</order>
+        <order>2</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -814,14 +1168,14 @@ outputs.key = gs.getProperty("x_941875_steam.key"); // Steam key stored in Sys_p
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-03-18 16:50:06</sys_created_on>
         <sys_id>7e721f6e831022104e27cd19feaad3c9</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-18 16:50:06</sys_updated_on>
+        <sys_updated_on>2025-03-19 15:48:58</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -878,12 +1232,12 @@ outputs.key = gs.getProperty("x_941875_steam.key"); // Steam key stored in Sys_p
         <label>Don't Treat as Error</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
-        <model display_value="Steam - Get Play Summary">bb609baa831022104e27cd19feaad3c1</model>
+        <model display_value="Steam - Get Player Summary">bb609baa831022104e27cd19feaad3c1</model>
         <model_id>bb609baa831022104e27cd19feaad3c1</model_id>
         <model_table>sys_hub_action_type_definition</model_table>
         <name>var__m_sys_hub_action_output_bb609baa831022104e27cd19feaad3c1</name>
         <next_element/>
-        <order>2</order>
+        <order>3</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -901,14 +1255,14 @@ outputs.key = gs.getProperty("x_941875_steam.key"); // Steam key stored in Sys_p
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-03-18 16:50:06</sys_created_on>
         <sys_id>b2721f6e831022104e27cd19feaad3cf</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-18 17:57:37</sys_updated_on>
+        <sys_updated_on>2025-03-19 15:48:58</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -926,7 +1280,7 @@ outputs.key = gs.getProperty("x_941875_steam.key"); // Steam key stored in Sys_p
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=bb609baa831022104e27cd19feaad3c1"/>
     <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=bb609baa831022104e27cd19feaad3c1^sys_idNOT INcb721f6e831022104e27cd19feaad3f4"/>
     <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
-        <action_type_id display_value="Steam - Get Play Summary">bb609baa831022104e27cd19feaad3c1</action_type_id>
+        <action_type_id display_value="Steam - Get Player Summary">bb609baa831022104e27cd19feaad3c1</action_type_id>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-03-18 16:50:07</sys_created_on>
         <sys_id>cb721f6e831022104e27cd19feaad3f4</sys_id>
@@ -935,7 +1289,6 @@ outputs.key = gs.getProperty("x_941875_steam.key"); // Steam key stored in Sys_p
         <sys_updated_on>2025-03-18 16:50:07</sys_updated_on>
     </sys_hub_action_status_metadata>
     <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=cb721f6e831022104e27cd19feaad3f4"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_bb609baa831022104e27cd19feaad3c1^sys_idNOT IN23e1a762839022104e27cd19feaad3cf"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>steam_id</element>
         <help/>
@@ -960,7 +1313,6 @@ outputs.key = gs.getProperty("x_941875_steam.key"); // Steam key stored in Sys_p
         <url_target/>
     </sys_documentation>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_bb609baa831022104e27cd19feaad3c1"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_bb609baa831022104e27cd19feaad3c1^sys_idNOT IN36721f6e831022104e27cd19feaad3ee,76721f6e831022104e27cd19feaad3ce"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>__dont_treat_as_error__</element>
         <help/>
@@ -1007,22 +1359,45 @@ outputs.key = gs.getProperty("x_941875_steam.key"); // Steam key stored in Sys_p
         <url/>
         <url_target/>
     </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>Response</element>
+        <help/>
+        <hint/>
+        <label>Response</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_bb609baa831022104e27cd19feaad3c1</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 15:48:58</sys_created_on>
+        <sys_id>cd1ec40fc31caa1074b579ec050131a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Steam" source="x_941875_steam">b6ce0238831022104e27cd19feaad338</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 15:48:58</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_bb609baa831022104e27cd19feaad3c1"/>
     <sys_hub_action_plan action="delete_multiple" query="action_id=bb609baa831022104e27cd19feaad3c1^sys_idNOT IN3cf12b62839022104e27cd19feaad31a"/>
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
-        <action_id display_value="Steam - Get Play Summary">bb609baa831022104e27cd19feaad3c1</action_id>
+        <action_id display_value="Steam - Get Player Summary">bb609baa831022104e27cd19feaad3c1</action_id>
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"3cf12b62839022104e27cd19feaad31a","name":"plan","plan_signature":null}}</plan>
-        <snapshot>98f1e762839022104e27cd19feaad3c7</snapshot>
+        <snapshot>ca1e080fc31caa1074b579ec050131e5</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-03-18 17:57:41</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>3cf12b62839022104e27cd19feaad31a</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-18 17:57:41</sys_updated_on>
+        <sys_updated_on>2025-03-19 15:49:04</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -1039,19 +1414,20 @@ outputs.key = gs.getProperty("x_941875_steam.key"); // Steam key stored in Sys_p
         <description>Makes a get request on Steam API with the method GetPlayerSummaries</description>
         <flow_priority/>
         <internal_name>steam__get_play_summary</internal_name>
-        <label_cache>[{"name":"{{action.steam_id}}","label":"action➛Steam ID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[dc7bb318-07ba-42be-83c7-905f525c5fc8].key}}","label":"step➛Script step➛Key","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]</label_cache>
+        <label_cache>[{"name":"{{action.steam_id}}","label":"action➛Steam ID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[dc7bb318-07ba-42be-83c7-905f525c5fc8].key}}","label":"step➛Script step➛Key","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}},{"name":"{{step[31939060-73f0-4389-8176-9a25bbead04e].root}}","label":"step➛JSON Parser step➛root","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[8953bd19-222a-4044-9773-a2ebf28e204c].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}}]</label_cache>
         <master>true</master>
-        <name>Steam - Get Play Summary</name>
+        <name>Steam - Get Player Summary</name>
         <natlang/>
         <outputs/>
-        <parent_action display_value="Steam - Get Play Summary">bb609baa831022104e27cd19feaad3c1</parent_action>
+        <outputs/>
+        <parent_action display_value="Steam - Get Player Summary">bb609baa831022104e27cd19feaad3c1</parent_action>
         <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-03-18 17:57:38</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>0cf1e762839022104e27cd19feaad367</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -1059,7 +1435,7 @@ outputs.key = gs.getProperty("x_941875_steam.key"); // Steam key stored in Sys_p
         <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-18 17:57:38</sys_updated_on>
+        <sys_updated_on>2025-03-19 15:49:00</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_snapshot>
@@ -1073,10 +1449,10 @@ outputs.key = gs.getProperty("x_941875_steam.key"); // Steam key stored in Sys_p
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-03-18 17:57:39</sys_created_on>
         <sys_id>9cf1e762839022104e27cd19feaad3c5</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-18 17:57:39</sys_updated_on>
-        <value>{"version":"1.0","complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"serializationFormat":"JSON"}</value>
+        <sys_updated_on>2025-03-19 15:18:19</sys_updated_on>
+        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON"}</value>
         <variable display_value="Action Status">dcf1e762839022104e27cd19feaad3b5</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1093,11 +1469,35 @@ outputs.key = gs.getProperty("x_941875_steam.key"); // Steam key stored in Sys_p
         <value>0</value>
         <variable display_value="Don't Treat as Error">94f1e762839022104e27cd19feaad3bb</variable>
     </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_action_output_0cf1e762839022104e27cd19feaad367^id=0cf1e762839022104e27cd19feaad367"/>
-    <sys_hub_step_instance action="delete_multiple" query="action=0cf1e762839022104e27cd19feaad367^sys_idNOT IN08f1e762839022104e27cd19feaad387,ccf1e762839022104e27cd19feaad374"/>
+    <sys_element_mapping action="delete_multiple" query="id=0cf1e762839022104e27cd19feaad367"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>Response</field>
+        <id>0cf1e762839022104e27cd19feaad367</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 15:49:02</sys_created_on>
+        <sys_id>0e1e080fc31caa1074b579ec050131e3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 15:49:02</sys_updated_on>
+        <table>var__m_sys_hub_action_output_0cf1e762839022104e27cd19feaad367</table>
+        <value>{{step[31939060-73f0-4389-8176-9a25bbead04e].root}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__action_status__</field>
+        <id>0cf1e762839022104e27cd19feaad367</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 15:18:19</sys_created_on>
+        <sys_id>801788cbc3d8aa1074b579ec0501317d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 15:18:19</sys_updated_on>
+        <table>var__m_sys_hub_action_output_0cf1e762839022104e27cd19feaad367</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=0cf1e762839022104e27cd19feaad367^sys_idNOT IN291e080fc31caa1074b579ec0501314f,ccf1e762839022104e27cd19feaad374,f51e080fc31caa1074b579ec050131a1"/>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="Steam - Get Play Summary">0cf1e762839022104e27cd19feaad367</action>
-        <cid>51f7b41b-4166-481f-b0d3-2162954530cd</cid>
+        <action display_value="Steam - Get Player Summary">0cf1e762839022104e27cd19feaad367</action>
+        <cid>8953bd19-222a-4044-9773-a2ebf28e204c</cid>
         <error_handling_type>1</error_handling_type>
         <extended_inputs/>
         <extended_outputs/>
@@ -1110,310 +1510,310 @@ outputs.key = gs.getProperty("x_941875_steam.key"); // Steam key stored in Sys_p
         <section/>
         <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-03-18 17:57:38</sys_created_on>
-        <sys_id>08f1e762839022104e27cd19feaad387</sys_id>
+        <sys_created_on>2025-03-19 15:49:01</sys_created_on>
+        <sys_id>291e080fc31caa1074b579ec0501314f</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-18 17:57:39</sys_updated_on>
+        <sys_updated_on>2025-03-19 15:49:01</sys_updated_on>
     </sys_hub_step_instance>
-    <sys_variable_value action="delete_multiple" query="document_key=08f1e762839022104e27cd19feaad387"/>
+    <sys_variable_value action="delete_multiple" query="document_key=291e080fc31caa1074b579ec0501314f"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_step_instance</document>
-        <document_key>08f1e762839022104e27cd19feaad387</document_key>
-        <order>100</order>
+        <document_key>291e080fc31caa1074b579ec0501314f</document_key>
+        <order>10</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-03-18 17:57:39</sys_created_on>
-        <sys_id>14f1e762839022104e27cd19feaad3b1</sys_id>
+        <sys_created_on>2025-03-19 15:49:01</sys_created_on>
+        <sys_id>311e080fc31caa1074b579ec0501319c</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-18 17:57:39</sys_updated_on>
-        <value/>
-        <variable display_value="Connection Timeout">7a59009bc7522010820469467ec260c0</variable>
+        <sys_updated_on>2025-03-19 15:49:01</sys_updated_on>
+        <value>c2a0d7ea831022104e27cd19feaad332</value>
+        <variable display_value="Connection Alias">262882f03b23320057a4a2e334efc4f0</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_step_instance</document>
-        <document_key>08f1e762839022104e27cd19feaad387</document_key>
-        <order>13</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-03-18 17:57:39</sys_created_on>
-        <sys_id>18f1e762839022104e27cd19feaad3b0</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-18 17:57:39</sys_updated_on>
-        <value>18409d8007482000dada43c0d1021e8f</value>
-        <variable display_value="Capabilities">c30a451d2f201300a09a839fb18c95b4</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_step_instance</document>
-        <document_key>08f1e762839022104e27cd19feaad387</document_key>
-        <order>100</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-03-18 17:57:39</sys_created_on>
-        <sys_id>1cf1e762839022104e27cd19feaad3af</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-18 17:57:39</sys_updated_on>
-        <value>1</value>
-        <variable display_value="Honor Duplicate Query Params">58715a1c53f22010d3a8ddeeff7b1248</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_step_instance</document>
-        <document_key>08f1e762839022104e27cd19feaad387</document_key>
-        <order>25</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-03-18 17:57:39</sys_created_on>
-        <sys_id>50f1e762839022104e27cd19feaad3b1</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-18 17:57:39</sys_updated_on>
-        <value>{}</value>
-        <variable display_value="Query Parameters">4328e2fb47222200b4fad7527c9a7164</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_step_instance</document>
-        <document_key>08f1e762839022104e27cd19feaad387</document_key>
-        <order>30</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-03-18 17:57:39</sys_created_on>
-        <sys_id>54f1e762839022104e27cd19feaad3b0</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-18 17:57:39</sys_updated_on>
-        <value>{"type":"ADV_NV","value":[]}</value>
-        <variable display_value="Headers">371837f1c71003007b237f48cb9763b0</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_step_instance</document>
-        <document_key>08f1e762839022104e27cd19feaad387</document_key>
-        <order>400</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-03-18 17:57:39</sys_created_on>
-        <sys_id>58f1e762839022104e27cd19feaad3af</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-18 17:57:39</sys_updated_on>
-        <value>ef751ff07301330025d71afe2ff6a7f9</value>
-        <variable display_value="Retry Policy">37be397587c03300a8cc7d5e27cb0ba2</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_step_instance</document>
-        <document_key>08f1e762839022104e27cd19feaad387</document_key>
-        <order>20</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-03-18 17:57:39</sys_created_on>
-        <sys_id>90f1e762839022104e27cd19feaad3b0</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-18 17:57:39</sys_updated_on>
-        <value>/ISteamUser/GetPlayerSummaries/v0002/?</value>
-        <variable display_value="Resource Path">3d090af03b23320057a4a2e334efc455</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_step_instance</document>
-        <document_key>08f1e762839022104e27cd19feaad387</document_key>
-        <order>100</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-03-18 17:57:39</sys_created_on>
-        <sys_id>94f1e762839022104e27cd19feaad3af</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-18 17:57:39</sys_updated_on>
-        <value>1</value>
-        <variable display_value="Honor Duplicate Headers">15288f755bd24110ab933520b881c713</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_step_instance</document>
-        <document_key>08f1e762839022104e27cd19feaad387</document_key>
-        <order>12</order>
-        <sys_class_name>sys_variable_value</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-03-18 17:57:39</sys_created_on>
-        <sys_id>9cf1e762839022104e27cd19feaad3b0</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-18 17:57:39</sys_updated_on>
-        <value>35aa573fd7802200bdbaee5b5e610375</value>
-        <variable display_value="MID Application">f11ebf865f101300a09a2abd7f466652</variable>
-    </sys_variable_value>
-    <sys_variable_value action="INSERT_OR_UPDATE">
-        <document>sys_hub_step_instance</document>
-        <document_key>08f1e762839022104e27cd19feaad387</document_key>
+        <document_key>291e080fc31caa1074b579ec0501314f</document_key>
         <order>15</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-03-18 17:57:39</sys_created_on>
-        <sys_id>d8f1e762839022104e27cd19feaad3b0</sys_id>
+        <sys_created_on>2025-03-19 15:49:01</sys_created_on>
+        <sys_id>3d1e080fc31caa1074b579ec0501319c</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-18 17:57:39</sys_updated_on>
+        <sys_updated_on>2025-03-19 15:49:01</sys_updated_on>
         <value>http://api.steampowered.com</value>
         <variable display_value="Base URL">a67a8ef03b23320057a4a2e334efc472</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
         <document>sys_hub_step_instance</document>
-        <document_key>08f1e762839022104e27cd19feaad387</document_key>
-        <order>10</order>
+        <document_key>291e080fc31caa1074b579ec0501314f</document_key>
+        <order>100</order>
         <sys_class_name>sys_variable_value</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-03-18 17:57:39</sys_created_on>
-        <sys_id>dcf1e762839022104e27cd19feaad3af</sys_id>
+        <sys_created_on>2025-03-19 15:49:01</sys_created_on>
+        <sys_id>751e080fc31caa1074b579ec0501319d</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-18 17:57:39</sys_updated_on>
-        <value>c2a0d7ea831022104e27cd19feaad332</value>
-        <variable display_value="Connection Alias">262882f03b23320057a4a2e334efc4f0</variable>
+        <sys_updated_on>2025-03-19 15:49:01</sys_updated_on>
+        <value/>
+        <variable display_value="Connection Timeout">7a59009bc7522010820469467ec260c0</variable>
     </sys_variable_value>
-    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_08f1e762839022104e27cd19feaad387^id=08f1e762839022104e27cd19feaad387"/>
-    <sys_element_mapping action="delete_multiple" query="id=08f1e762839022104e27cd19feaad387"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>291e080fc31caa1074b579ec0501314f</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 15:49:01</sys_created_on>
+        <sys_id>791e080fc31caa1074b579ec0501319c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 15:49:01</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="Capabilities">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>291e080fc31caa1074b579ec0501314f</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 15:49:01</sys_created_on>
+        <sys_id>7d1e080fc31caa1074b579ec0501319b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 15:49:01</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Query Params">58715a1c53f22010d3a8ddeeff7b1248</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>291e080fc31caa1074b579ec0501314f</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 15:49:01</sys_created_on>
+        <sys_id>b11e080fc31caa1074b579ec0501319d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 15:49:01</sys_updated_on>
+        <value>{}</value>
+        <variable display_value="Query Parameters">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>291e080fc31caa1074b579ec0501314f</document_key>
+        <order>30</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 15:49:01</sys_created_on>
+        <sys_id>b51e080fc31caa1074b579ec0501319c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 15:49:01</sys_updated_on>
+        <value>{"type":"ADV_NV","value":[]}</value>
+        <variable display_value="Headers">371837f1c71003007b237f48cb9763b0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>291e080fc31caa1074b579ec0501314f</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 15:49:01</sys_created_on>
+        <sys_id>b91e080fc31caa1074b579ec0501319b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 15:49:01</sys_updated_on>
+        <value>ef751ff07301330025d71afe2ff6a7f9</value>
+        <variable display_value="Retry Policy">37be397587c03300a8cc7d5e27cb0ba2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>291e080fc31caa1074b579ec0501314f</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 15:49:01</sys_created_on>
+        <sys_id>f11e080fc31caa1074b579ec0501319c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 15:49:01</sys_updated_on>
+        <value>/ISteamUser/GetPlayerSummaries/v0002/?</value>
+        <variable display_value="Resource Path">3d090af03b23320057a4a2e334efc455</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>291e080fc31caa1074b579ec0501314f</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 15:49:01</sys_created_on>
+        <sys_id>f51e080fc31caa1074b579ec0501319b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 15:49:01</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Headers">15288f755bd24110ab933520b881c713</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>291e080fc31caa1074b579ec0501314f</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 15:49:01</sys_created_on>
+        <sys_id>fd1e080fc31caa1074b579ec0501319c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 15:49:01</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_291e080fc31caa1074b579ec0501314f^id=291e080fc31caa1074b579ec0501314f"/>
+    <sys_element_mapping action="delete_multiple" query="id=291e080fc31caa1074b579ec0501314f"/>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>application</field>
-        <id>08f1e762839022104e27cd19feaad387</id>
+        <id>291e080fc31caa1074b579ec0501314f</id>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-03-18 17:57:39</sys_created_on>
-        <sys_id>9cf1e762839022104e27cd19feaad3ae</sys_id>
+        <sys_created_on>2025-03-19 15:49:01</sys_created_on>
+        <sys_id>fd1e080fc31caa1074b579ec0501319a</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-18 17:57:39</sys_updated_on>
+        <sys_updated_on>2025-03-19 15:49:01</sys_updated_on>
         <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
         <value/>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>base_url</field>
-        <id>08f1e762839022104e27cd19feaad387</id>
+        <id>291e080fc31caa1074b579ec0501314f</id>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-03-18 17:57:39</sys_created_on>
-        <sys_id>d8f1e762839022104e27cd19feaad3ae</sys_id>
+        <sys_created_on>2025-03-19 15:49:01</sys_created_on>
+        <sys_id>3d1e080fc31caa1074b579ec0501319a</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-18 17:57:39</sys_updated_on>
+        <sys_updated_on>2025-03-19 15:49:01</sys_updated_on>
         <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
         <value/>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>capabilities</field>
-        <id>08f1e762839022104e27cd19feaad387</id>
+        <id>291e080fc31caa1074b579ec0501314f</id>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-03-18 17:57:39</sys_created_on>
-        <sys_id>18f1e762839022104e27cd19feaad3ae</sys_id>
+        <sys_created_on>2025-03-19 15:49:01</sys_created_on>
+        <sys_id>791e080fc31caa1074b579ec0501319a</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-18 17:57:39</sys_updated_on>
+        <sys_updated_on>2025-03-19 15:49:01</sys_updated_on>
         <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
         <value/>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>connection_alias</field>
-        <id>08f1e762839022104e27cd19feaad387</id>
+        <id>291e080fc31caa1074b579ec0501314f</id>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-03-18 17:57:39</sys_created_on>
-        <sys_id>dcf1e762839022104e27cd19feaad3ad</sys_id>
+        <sys_created_on>2025-03-19 15:49:01</sys_created_on>
+        <sys_id>311e080fc31caa1074b579ec0501319a</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-18 17:57:39</sys_updated_on>
+        <sys_updated_on>2025-03-19 15:49:01</sys_updated_on>
         <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
         <value/>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>connection_timeout</field>
-        <id>08f1e762839022104e27cd19feaad387</id>
+        <id>291e080fc31caa1074b579ec0501314f</id>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-03-18 17:57:39</sys_created_on>
-        <sys_id>14f1e762839022104e27cd19feaad3af</sys_id>
+        <sys_created_on>2025-03-19 15:49:01</sys_created_on>
+        <sys_id>751e080fc31caa1074b579ec0501319b</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-18 17:57:39</sys_updated_on>
+        <sys_updated_on>2025-03-19 15:49:01</sys_updated_on>
         <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
         <value/>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>headers</field>
-        <id>08f1e762839022104e27cd19feaad387</id>
+        <id>291e080fc31caa1074b579ec0501314f</id>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-03-18 17:57:39</sys_created_on>
-        <sys_id>54f1e762839022104e27cd19feaad3ae</sys_id>
+        <sys_created_on>2025-03-19 15:49:01</sys_created_on>
+        <sys_id>b51e080fc31caa1074b579ec0501319a</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-18 17:57:39</sys_updated_on>
+        <sys_updated_on>2025-03-19 15:49:01</sys_updated_on>
         <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
         <value/>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>honor_duplicate_headers</field>
-        <id>08f1e762839022104e27cd19feaad387</id>
+        <id>291e080fc31caa1074b579ec0501314f</id>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-03-18 17:57:39</sys_created_on>
-        <sys_id>94f1e762839022104e27cd19feaad3ad</sys_id>
+        <sys_created_on>2025-03-19 15:49:01</sys_created_on>
+        <sys_id>f51e080fc31caa1074b579ec05013199</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-18 17:57:39</sys_updated_on>
+        <sys_updated_on>2025-03-19 15:49:01</sys_updated_on>
         <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
         <value/>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>honor_duplicate_query_params</field>
-        <id>08f1e762839022104e27cd19feaad387</id>
+        <id>291e080fc31caa1074b579ec0501314f</id>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-03-18 17:57:39</sys_created_on>
-        <sys_id>1cf1e762839022104e27cd19feaad3ad</sys_id>
+        <sys_created_on>2025-03-19 15:49:01</sys_created_on>
+        <sys_id>7d1e080fc31caa1074b579ec05013199</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-18 17:57:39</sys_updated_on>
+        <sys_updated_on>2025-03-19 15:49:01</sys_updated_on>
         <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
         <value/>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>query_params</field>
-        <id>08f1e762839022104e27cd19feaad387</id>
+        <id>291e080fc31caa1074b579ec0501314f</id>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-03-18 17:57:39</sys_created_on>
-        <sys_id>50f1e762839022104e27cd19feaad3af</sys_id>
+        <sys_created_on>2025-03-19 15:49:01</sys_created_on>
+        <sys_id>b11e080fc31caa1074b579ec0501319b</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-18 17:57:39</sys_updated_on>
+        <sys_updated_on>2025-03-19 15:49:01</sys_updated_on>
         <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
-        <value>{"type":"ADV_NV","value":[{"name":"key","value":"{{step[dc7bb318-07ba-42be-83c7-905f525c5fc8].key}}","attributes":{"omit_if_empty":false,"mandatory":false}},{"name":"steamids","value":"76561198139539478","attributes":{"omit_if_empty":false,"mandatory":false}}]}</value>
+        <value>{"type":"ADV_NV","value":[{"name":"key","value":"{{step[dc7bb318-07ba-42be-83c7-905f525c5fc8].key}}","attributes":{"omit_if_empty":false,"mandatory":false}},{"name":"steamids","value":"{{action.steam_id}}","attributes":{"omit_if_empty":false,"mandatory":false}}]}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>resource_path</field>
-        <id>08f1e762839022104e27cd19feaad387</id>
+        <id>291e080fc31caa1074b579ec0501314f</id>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-03-18 17:57:39</sys_created_on>
-        <sys_id>90f1e762839022104e27cd19feaad3ae</sys_id>
+        <sys_created_on>2025-03-19 15:49:01</sys_created_on>
+        <sys_id>f11e080fc31caa1074b579ec0501319a</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-18 17:57:39</sys_updated_on>
+        <sys_updated_on>2025-03-19 15:49:01</sys_updated_on>
         <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
         <value/>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>retry_policy</field>
-        <id>08f1e762839022104e27cd19feaad387</id>
+        <id>291e080fc31caa1074b579ec0501314f</id>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-03-18 17:57:39</sys_created_on>
-        <sys_id>58f1e762839022104e27cd19feaad3ad</sys_id>
+        <sys_created_on>2025-03-19 15:49:01</sys_created_on>
+        <sys_id>b91e080fc31caa1074b579ec05013199</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-18 17:57:39</sys_updated_on>
+        <sys_updated_on>2025-03-19 15:49:01</sys_updated_on>
         <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
         <value/>
     </sys_element_mapping>
-    <sys_translated_text action="delete_multiple" query="documentkey=08f1e762839022104e27cd19feaad387"/>
-    <sys_hub_step_ext_input action="delete_multiple" query="model=08f1e762839022104e27cd19feaad387"/>
-    <sys_hub_step_ext_output action="delete_multiple" query="model=08f1e762839022104e27cd19feaad387^sys_idNOT IN58f1e762839022104e27cd19feaad391"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=291e080fc31caa1074b579ec0501314f"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=291e080fc31caa1074b579ec0501314f"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=291e080fc31caa1074b579ec0501314f^sys_idNOT IN351e080fc31caa1074b579ec05013172"/>
     <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isLocal=true,uiType=password2,uiTypeLabel=Password (2 Way Encrypted),uiUniqueId=759a08b0-491d-4c23-8375-0991ebdb6439</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isLocal=true,uiType=password2,uiTypeLabel=Password (2 Way Encrypted),uiUniqueId=dd06f548-5811-4aaf-8831-9290d8a38af3</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -1449,10 +1849,10 @@ outputs.key = gs.getProperty("x_941875_steam.key"); // Steam key stored in Sys_p
         <label>Credential Value</label>
         <mandatory>false</mandatory>
         <max_length>255</max_length>
-        <model display_value="REST step">08f1e762839022104e27cd19feaad387</model>
-        <model_id>08f1e762839022104e27cd19feaad387</model_id>
+        <model display_value="REST step">291e080fc31caa1074b579ec0501314f</model>
+        <model_id>291e080fc31caa1074b579ec0501314f</model_id>
         <model_table>sys_hub_step_instance</model_table>
-        <name>var__m_sys_hub_step_ext_output_08f1e762839022104e27cd19feaad387</name>
+        <name>var__m_sys_hub_step_ext_output_291e080fc31caa1074b579ec0501314f</name>
         <next_element/>
         <order>1</order>
         <primary>false</primary>
@@ -1470,8 +1870,8 @@ outputs.key = gs.getProperty("x_941875_steam.key"); // Steam key stored in Sys_p
         <staged>false</staged>
         <sys_class_name>sys_hub_step_ext_output</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-03-18 17:57:39</sys_created_on>
-        <sys_id>58f1e762839022104e27cd19feaad391</sys_id>
+        <sys_created_on>2025-03-19 15:49:01</sys_created_on>
+        <sys_id>351e080fc31caa1074b579ec05013172</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
@@ -1479,7 +1879,7 @@ outputs.key = gs.getProperty("x_941875_steam.key"); // Steam key stored in Sys_p
         <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-18 17:57:39</sys_updated_on>
+        <sys_updated_on>2025-03-19 15:49:01</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1492,20 +1892,19 @@ outputs.key = gs.getProperty("x_941875_steam.key"); // Steam key stored in Sys_p
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
-    <sys_hub_input_scripts action="delete_multiple" query="instance=08f1e762839022104e27cd19feaad387"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_08f1e762839022104e27cd19feaad387^sys_idNOT INdcf1e762839022104e27cd19feaad394"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=291e080fc31caa1074b579ec0501314f"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>sn_auth_token</element>
         <help/>
         <hint/>
         <label>Credential Value</label>
         <language>en</language>
-        <name>var__m_sys_hub_step_ext_output_08f1e762839022104e27cd19feaad387</name>
+        <name>var__m_sys_hub_step_ext_output_291e080fc31caa1074b579ec0501314f</name>
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2025-03-18 17:57:39</sys_created_on>
-        <sys_id>dcf1e762839022104e27cd19feaad394</sys_id>
+        <sys_created_on>2025-03-19 15:49:01</sys_created_on>
+        <sys_id>b11e080fc31caa1074b579ec05013175</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package display_value="Steam" source="x_941875_steam">b6ce0238831022104e27cd19feaad338</sys_package>
@@ -1513,12 +1912,12 @@ outputs.key = gs.getProperty("x_941875_steam.key"); // Steam key stored in Sys_p
         <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-18 17:57:39</sys_updated_on>
+        <sys_updated_on>2025-03-19 15:49:01</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
     <sys_hub_step_instance action="INSERT_OR_UPDATE">
-        <action display_value="Steam - Get Play Summary">0cf1e762839022104e27cd19feaad367</action>
+        <action display_value="Steam - Get Player Summary">0cf1e762839022104e27cd19feaad367</action>
         <cid>dc7bb318-07ba-42be-83c7-905f525c5fc8</cid>
         <error_handling_type>1</error_handling_type>
         <extended_inputs/>
@@ -1533,10 +1932,10 @@ outputs.key = gs.getProperty("x_941875_steam.key"); // Steam key stored in Sys_p
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-03-18 17:57:38</sys_created_on>
         <sys_id>ccf1e762839022104e27cd19feaad374</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-18 17:57:38</sys_updated_on>
+        <sys_updated_on>2025-03-19 15:18:18</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=ccf1e762839022104e27cd19feaad374"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1547,11 +1946,10 @@ outputs.key = gs.getProperty("x_941875_steam.key"); // Steam key stored in Sys_p
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-03-18 17:57:38</sys_created_on>
         <sys_id>c0f1e762839022104e27cd19feaad385</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-18 17:57:38</sys_updated_on>
+        <sys_updated_on>2025-03-19 15:18:18</sys_updated_on>
         <value>(function execute(inputs, outputs) {&#13;
-&#13;
 outputs.key = gs.getProperty("x_941875_steam.key"); // Steam key stored in Sys_property&#13;
 })(inputs, outputs);&#13;
 </value>
@@ -1660,7 +2058,6 @@ outputs.key = gs.getProperty("x_941875_steam.key"); // Steam key stored in Sys_p
         <xml_view>false</xml_view>
     </sys_hub_step_ext_output>
     <sys_hub_input_scripts action="delete_multiple" query="instance=ccf1e762839022104e27cd19feaad374"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_step_ext_output_ccf1e762839022104e27cd19feaad374^sys_idNOT INc4f1e762839022104e27cd19feaad37d"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>key</element>
         <help/>
@@ -1681,6 +2078,228 @@ outputs.key = gs.getProperty("x_941875_steam.key"); // Steam key stored in Sys_p
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2025-03-18 17:57:38</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Steam - Get Player Summary">0cf1e762839022104e27cd19feaad367</action>
+        <cid>31939060-73f0-4389-8176-9a25bbead04e</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>JSON Parser step</label>
+        <order>3</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="JSON Parser">502328c387523300f917e55936cb0bf0</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 15:49:01</sys_created_on>
+        <sys_id>f51e080fc31caa1074b579ec050131a1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 15:49:01</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=f51e080fc31caa1074b579ec050131a1"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f51e080fc31caa1074b579ec050131a1</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 15:49:01</sys_created_on>
+        <sys_id>711e080fc31caa1074b579ec050131ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 15:49:01</sys_updated_on>
+        <value>{"response":{"players":[{"steamid":"76561198139539478","communityvisibilitystate":3,"profilestate":1,"personaname":"1shabbymn","profileurl":"https://steamcommunity.com/profiles/76561198139539478/","avatar":"https://avatars.steamstatic.com/67b35a817fd677a80e8d549a398f075a34c4f1ec.jpg","avatarmedium":"https://avatars.steamstatic.com/67b35a817fd677a80e8d549a398f075a34c4f1ec_medium.jpg","avatarfull":"https://avatars.steamstatic.com/67b35a817fd677a80e8d549a398f075a34c4f1ec_full.jpg","avatarhash":"67b35a817fd677a80e8d549a398f075a34c4f1ec","lastlogoff":1742362249,"personastate":0,"primaryclanid":"103582791429521408","timecreated":1402096693,"personastateflags":0,"loccountrycode":"US"}]}}</value>
+        <variable display_value="Sample payload">d335ac0787523300f917e55936cb0b1d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>f51e080fc31caa1074b579ec050131a1</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 15:49:01</sys_created_on>
+        <sys_id>bd1e080fc31caa1074b579ec050131b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 15:49:01</sys_updated_on>
+        <value>{"name":"root","children":[{"name":"response","children":[{"name":"players","children":[{"name":"players_object","children":[{"name":"steamid","children":[],"type":"string","jpath":"$.response.players[*].steamid","previewValue":"76561198139539478"},{"name":"communityvisibilitystate","children":[],"type":"string","jpath":"$.response.players[*].communityvisibilitystate","previewValue":"3"},{"name":"profilestate","children":[],"type":"string","jpath":"$.response.players[*].profilestate","previewValue":"1"},{"name":"personaname","children":[],"type":"string","jpath":"$.response.players[*].personaname","previewValue":"1shabbymn"},{"name":"profileurl","children":[],"type":"string","jpath":"$.response.players[*].profileurl","previewValue":"https://steamcommunity.com/profiles/76561198139539478/"},{"name":"avatar","children":[],"type":"string","jpath":"$.response.players[*].avatar","previewValue":"https://avatars.steamstatic.com/67b35a817fd677a80e8d549a398f075a34c4f1ec.jpg"},{"name":"avatarmedium","children":[],"type":"string","jpath":"$.response.players[*].avatarmedium","previewValue":"https://avatars.steamstatic.com/67b35a817fd677a80e8d549a398f075a34c4f1ec_medium.jpg"},{"name":"avatarfull","children":[],"type":"string","jpath":"$.response.players[*].avatarfull","previewValue":"https://avatars.steamstatic.com/67b35a817fd677a80e8d549a398f075a34c4f1ec_full.jpg"},{"name":"avatarhash","children":[],"type":"string","jpath":"$.response.players[*].avatarhash","previewValue":"67b35a817fd677a80e8d549a398f075a34c4f1ec"},{"name":"lastlogoff","children":[],"type":"string","jpath":"$.response.players[*].lastlogoff","previewValue":"1742362249"},{"name":"personastate","children":[],"type":"string","jpath":"$.response.players[*].personastate","previewValue":"0"},{"name":"primaryclanid","children":[],"type":"string","jpath":"$.response.players[*].primaryclanid","previewValue":"103582791429521408"},{"name":"timecreated","children":[],"type":"string","jpath":"$.response.players[*].timecreated","previewValue":"1402096693"},{"name":"personastateflags","children":[],"type":"string","jpath":"$.response.players[*].personastateflags","previewValue":"0"},{"name":"loccountrycode","children":[],"type":"string","jpath":"$.response.players[*].loccountrycode","previewValue":"US"}],"type":"object","jpath":"$.response.players[*]","previewValue":""}],"type":"array.object","jpath":"$.response.players[*]","previewValue":""}],"type":"object","jpath":"$.response","previewValue":""}],"type":"object","jpath":"$","previewValue":""}</value>
+        <variable display_value="Target">4674240787523300f917e55936cb0b0e</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_f51e080fc31caa1074b579ec050131a1^id=f51e080fc31caa1074b579ec050131a1"/>
+    <sys_element_mapping action="delete_multiple" query="id=f51e080fc31caa1074b579ec050131a1"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sample_payload</field>
+        <id>f51e080fc31caa1074b579ec050131a1</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 15:49:01</sys_created_on>
+        <sys_id>3d1e080fc31caa1074b579ec050131b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 15:49:01</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>source_data</field>
+        <id>f51e080fc31caa1074b579ec050131a1</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 15:49:01</sys_created_on>
+        <sys_id>791e080fc31caa1074b579ec050131b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 15:49:01</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value>{{step[8953bd19-222a-4044-9773-a2ebf28e204c].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>target_schema</field>
+        <id>f51e080fc31caa1074b579ec050131a1</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 15:49:01</sys_created_on>
+        <sys_id>b51e080fc31caa1074b579ec050131b9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 15:49:01</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_translated_text action="delete_multiple" query="documentkey=f51e080fc31caa1074b579ec050131a1"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=f51e080fc31caa1074b579ec050131a1"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=f51e080fc31caa1074b579ec050131a1^sys_idNOT INb11e080fc31caa1074b579ec050131a5"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD351e080faa1caa10d4d7df04d354f2a4</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>b6ce0238831022104e27cd19feaad338</scope_name>
+        <serialized_content>{"FlowDesigner:FD351e080faa1caa10d4d7df04d354f2a4":{"response":{"players":[{"$0_players":{"personastate":"String","personastate.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"personastate\",\"mandatory\":\"false\",\"order\":\"11\",\"max_length\":\"0\",\"uiUniqueId\":\"fdb71c68-07d5-4c94-a22a-3d4dd22599d4\"}"},"profileurl":"String","profileurl.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"profileurl\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\",\"uiUniqueId\":\"49599a05-776d-435f-aeb3-b98098cef5fa\"}"},"profilestate":"String","profilestate.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"profilestate\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"32ac3f44-0194-45c4-acf0-eb4271ebe438\"}"},"primaryclanid":"String","primaryclanid.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"primaryclanid\",\"mandatory\":\"false\",\"order\":\"12\",\"max_length\":\"0\",\"uiUniqueId\":\"ff75d850-0748-4ac8-83a8-23705109dc75\"}"},"avatarhash":"String","avatarhash.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"avatarhash\",\"mandatory\":\"false\",\"order\":\"9\",\"max_length\":\"0\",\"uiUniqueId\":\"b99d3b81-fe9d-4391-9f42-f35d94954d8f\"}"},"avatarfull":"String","avatarfull.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"avatarfull\",\"mandatory\":\"false\",\"order\":\"8\",\"max_length\":\"0\",\"uiUniqueId\":\"ca18f058-2825-45b0-a99c-5346bb6ebea2\"}"},"avatarmedium":"String","avatarmedium.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"avatarmedium\",\"mandatory\":\"false\",\"order\":\"7\",\"max_length\":\"0\",\"uiUniqueId\":\"74a514f5-f3c7-45ab-ad0b-631257814953\"}"},"avatar":"String","avatar.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"avatar\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\",\"uiUniqueId\":\"947c0c98-da61-41f7-90cf-be891b50e06f\"}"},"personaname":"String","personaname.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"personaname\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"1205893b-e767-4fd8-8a55-e1f67ec0b7ed\"}"},"personastateflags":"String","personastateflags.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"personastateflags\",\"mandatory\":\"false\",\"order\":\"14\",\"max_length\":\"0\",\"uiUniqueId\":\"5ed6346e-93a6-4796-99a8-bbb4ca47b6b0\"}"},"steamid":"String","steamid.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"steamid\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"8eca3a92-33c9-4aaf-8148-452ac5ae0cda\"}"},"timecreated":"String","timecreated.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"timecreated\",\"mandatory\":\"false\",\"order\":\"13\",\"max_length\":\"0\",\"uiUniqueId\":\"7f39937a-27cd-4a3c-8f27-8cb255d3a2d2\"}"},"lastlogoff":"String","lastlogoff.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"lastlogoff\",\"mandatory\":\"false\",\"order\":\"10\",\"max_length\":\"0\",\"uiUniqueId\":\"cfc475da-fada-43ac-83ee-836f0be6ab7f\"}"},"loccountrycode":"String","loccountrycode.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"loccountrycode\",\"mandatory\":\"false\",\"order\":\"15\",\"max_length\":\"0\",\"uiUniqueId\":\"6778e6e7-7f4b-4944-a1ee-5a56a4cf0332\"}"},"communityvisibilitystate":"String","communityvisibilitystate.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"communityvisibilitystate\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"87d6943d-3bd5-49a3-9867-4cf38eab76fc\"}"}}}],"players.$field_facets":{"SimpleMapFacet":"{\"choiceOption\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"players\",\"mandatory\":\"false\",\"child_name\":\"players_object\",\"uiUniqueId\":\"c64ddb97-414f-4dd8-8570-b2c5dd40a303\",\"uiTypeLabel\":\"Array.Object\",\"child_label\":\"players_object\",\"child_type_label\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"0\",\"child_uiUniqueId\":\"55909677-cde5-4c2e-8c9c-671cee4dbcb3\"}"}},"response.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"response\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"bd849ac4-0ff7-46fc-b32b-790d64e87be0\"}"}},"FlowDesigner:FD351e080faa1caa10d4d7df04d354f2a4.$type_facets":{"SimpleMapFacet":"{\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"root\",\"mandatory\":\"false\",\"uiUniqueId\":\"ef5ad6c1-03ba-4693-889c-a575107573a8\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD351e080faa1caa10d4d7df04d354f2a4\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 15:49:01</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f51e080fc31caa1074b579ec050131a4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 15:49:01</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FD351e080faa1caa10d4d7df04d354f2a4,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=ef5ad6c1-03ba-4693-889c-a575107573a8</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>root</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>root</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="JSON Parser step">f51e080fc31caa1074b579ec050131a1</model>
+        <model_id>f51e080fc31caa1074b579ec050131a1</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_f51e080fc31caa1074b579ec050131a1</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 15:49:01</sys_created_on>
+        <sys_id>b11e080fc31caa1074b579ec050131a5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 15:49:01</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=f51e080fc31caa1074b579ec050131a1"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>root</element>
+        <help/>
+        <hint/>
+        <label>root</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_f51e080fc31caa1074b579ec050131a1</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 15:49:01</sys_created_on>
+        <sys_id>711e080fc31caa1074b579ec050131a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Steam" source="x_941875_steam">b6ce0238831022104e27cd19feaad338</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 15:49:01</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -1725,7 +2344,7 @@ outputs.key = gs.getProperty("x_941875_steam.key"); // Steam key stored in Sys_p
         <label>Steam ID</label>
         <mandatory>true</mandatory>
         <max_length>8000</max_length>
-        <model display_value="Steam - Get Play Summary">0cf1e762839022104e27cd19feaad367</model>
+        <model display_value="Steam - Get Player Summary">0cf1e762839022104e27cd19feaad367</model>
         <model_id>0cf1e762839022104e27cd19feaad367</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_input_0cf1e762839022104e27cd19feaad367</name>
@@ -1769,7 +2388,117 @@ outputs.key = gs.getProperty("x_941875_steam.key"); // Steam key stored in Sys_p
         <xml_view>false</xml_view>
     </sys_hub_action_input>
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=4cf1e762839022104e27cd19feaad36a"/>
-    <sys_hub_action_output action="delete_multiple" query="model=0cf1e762839022104e27cd19feaad367^sys_idNOT IN94f1e762839022104e27cd19feaad3bb,dcf1e762839022104e27cd19feaad3b5"/>
+    <sys_hub_action_output action="delete_multiple" query="model=0cf1e762839022104e27cd19feaad367^sys_idNOT IN461e080fc31caa1074b579ec050131d3,94f1e762839022104e27cd19feaad3bb,dcf1e762839022104e27cd19feaad3b5"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDc61e080f5d1caa10b8afeb76dfe635d2</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>b6ce0238831022104e27cd19feaad338</scope_name>
+        <serialized_content>{"FlowDesigner:FDc61e080f5d1caa10b8afeb76dfe635d2":{"response":{"players":[{"$0_players":{"personastate":"String","personastate.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"personastate\",\"mandatory\":\"false\",\"order\":\"11\",\"max_length\":\"0\",\"uiUniqueId\":\"fdb71c68-07d5-4c94-a22a-3d4dd22599d4\"}"},"profileurl":"String","profileurl.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"profileurl\",\"mandatory\":\"false\",\"order\":\"5\",\"max_length\":\"0\",\"uiUniqueId\":\"49599a05-776d-435f-aeb3-b98098cef5fa\"}"},"profilestate":"String","profilestate.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"profilestate\",\"mandatory\":\"false\",\"order\":\"3\",\"max_length\":\"0\",\"uiUniqueId\":\"32ac3f44-0194-45c4-acf0-eb4271ebe438\"}"},"primaryclanid":"String","primaryclanid.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"primaryclanid\",\"mandatory\":\"false\",\"order\":\"12\",\"max_length\":\"0\",\"uiUniqueId\":\"ff75d850-0748-4ac8-83a8-23705109dc75\"}"},"avatarhash":"String","avatarhash.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"avatarhash\",\"mandatory\":\"false\",\"order\":\"9\",\"max_length\":\"0\",\"uiUniqueId\":\"b99d3b81-fe9d-4391-9f42-f35d94954d8f\"}"},"avatarfull":"String","avatarfull.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"avatarfull\",\"mandatory\":\"false\",\"order\":\"8\",\"max_length\":\"0\",\"uiUniqueId\":\"ca18f058-2825-45b0-a99c-5346bb6ebea2\"}"},"avatarmedium":"String","avatarmedium.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"avatarmedium\",\"mandatory\":\"false\",\"order\":\"7\",\"max_length\":\"0\",\"uiUniqueId\":\"74a514f5-f3c7-45ab-ad0b-631257814953\"}"},"avatar":"String","avatar.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"avatar\",\"mandatory\":\"false\",\"order\":\"6\",\"max_length\":\"0\",\"uiUniqueId\":\"947c0c98-da61-41f7-90cf-be891b50e06f\"}"},"personaname":"String","personaname.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"personaname\",\"mandatory\":\"false\",\"order\":\"4\",\"max_length\":\"0\",\"uiUniqueId\":\"1205893b-e767-4fd8-8a55-e1f67ec0b7ed\"}"},"personastateflags":"String","personastateflags.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"personastateflags\",\"mandatory\":\"false\",\"order\":\"14\",\"max_length\":\"0\",\"uiUniqueId\":\"5ed6346e-93a6-4796-99a8-bbb4ca47b6b0\"}"},"steamid":"String","steamid.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"steamid\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"8eca3a92-33c9-4aaf-8148-452ac5ae0cda\"}"},"timecreated":"String","timecreated.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"timecreated\",\"mandatory\":\"false\",\"order\":\"13\",\"max_length\":\"0\",\"uiUniqueId\":\"7f39937a-27cd-4a3c-8f27-8cb255d3a2d2\"}"},"lastlogoff":"String","lastlogoff.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"lastlogoff\",\"mandatory\":\"false\",\"order\":\"10\",\"max_length\":\"0\",\"uiUniqueId\":\"cfc475da-fada-43ac-83ee-836f0be6ab7f\"}"},"loccountrycode":"String","loccountrycode.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"loccountrycode\",\"mandatory\":\"false\",\"order\":\"15\",\"max_length\":\"0\",\"uiUniqueId\":\"6778e6e7-7f4b-4944-a1ee-5a56a4cf0332\"}"},"communityvisibilitystate":"String","communityvisibilitystate.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"communityvisibilitystate\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"87d6943d-3bd5-49a3-9867-4cf38eab76fc\"}"}}}],"players.$field_facets":{"SimpleMapFacet":"{\"choiceOption\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"players\",\"mandatory\":\"false\",\"child_name\":\"players_object\",\"uiUniqueId\":\"c64ddb97-414f-4dd8-8570-b2c5dd40a303\",\"uiTypeLabel\":\"Array.Object\",\"child_label\":\"players_object\",\"child_type_label\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"0\",\"child_uiUniqueId\":\"55909677-cde5-4c2e-8c9c-671cee4dbcb3\"}"}},"response.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"response\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"bd849ac4-0ff7-46fc-b32b-790d64e87be0\"}"}},"FlowDesigner:FDc61e080f5d1caa10b8afeb76dfe635d2.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"31939060-73f0-4389-8176-9a25bbead04e\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Response\",\"mandatory\":\"true\",\"uiUniqueId\":\"57a800fe-0e62-4d06-931a-6c06ecef4b56\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDc61e080f5d1caa10b8afeb76dfe635d2\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceType\":\"step\",\"sourceUiUniqueId\":\"ef5ad6c1-03ba-4693-889c-a575107573a8\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 15:49:02</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>8a1e080fc31caa1074b579ec050131d2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 15:49:02</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FDc61e080f5d1caa10b8afeb76dfe635d2,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,sourceId=31939060-73f0-4389-8176-9a25bbead04e,sourceType=step,sourceUiUniqueId=ef5ad6c1-03ba-4693-889c-a575107573a8,uiType=object,uiTypeLabel=Object,uiUniqueId=57a800fe-0e62-4d06-931a-6c06ecef4b56</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>Response</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Response</label>
+        <mandatory>true</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Steam - Get Player Summary">0cf1e762839022104e27cd19feaad367</model>
+        <model_id>0cf1e762839022104e27cd19feaad367</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_0cf1e762839022104e27cd19feaad367</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 15:49:02</sys_created_on>
+        <sys_id>461e080fc31caa1074b579ec050131d3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 15:49:02</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=461e080fc31caa1074b579ec050131d3"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=461e080fc31caa1074b579ec050131d3"/>
     <sys_hub_action_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -1812,12 +2541,12 @@ outputs.key = gs.getProperty("x_941875_steam.key"); // Steam key stored in Sys_p
         <label>Don't Treat as Error</label>
         <mandatory>false</mandatory>
         <max_length>40</max_length>
-        <model display_value="Steam - Get Play Summary">0cf1e762839022104e27cd19feaad367</model>
+        <model display_value="Steam - Get Player Summary">0cf1e762839022104e27cd19feaad367</model>
         <model_id>0cf1e762839022104e27cd19feaad367</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_output_0cf1e762839022104e27cd19feaad367</name>
         <next_element/>
-        <order>2</order>
+        <order>3</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -1835,14 +2564,14 @@ outputs.key = gs.getProperty("x_941875_steam.key"); // Steam key stored in Sys_p
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-03-18 17:57:39</sys_created_on>
         <sys_id>94f1e762839022104e27cd19feaad3bb</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-18 17:57:39</sys_updated_on>
+        <sys_updated_on>2025-03-19 15:49:02</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1899,12 +2628,12 @@ outputs.key = gs.getProperty("x_941875_steam.key"); // Steam key stored in Sys_p
         <label>Action Status</label>
         <mandatory>false</mandatory>
         <max_length>65000</max_length>
-        <model display_value="Steam - Get Play Summary">0cf1e762839022104e27cd19feaad367</model>
+        <model display_value="Steam - Get Player Summary">0cf1e762839022104e27cd19feaad367</model>
         <model_id>0cf1e762839022104e27cd19feaad367</model_id>
         <model_table>sys_hub_action_type_snapshot</model_table>
         <name>var__m_sys_hub_action_output_0cf1e762839022104e27cd19feaad367</name>
         <next_element/>
-        <order>1</order>
+        <order>2</order>
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
@@ -1922,14 +2651,14 @@ outputs.key = gs.getProperty("x_941875_steam.key"); // Steam key stored in Sys_p
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-03-18 17:57:39</sys_created_on>
         <sys_id>dcf1e762839022104e27cd19feaad3b5</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-18 17:57:39</sys_updated_on>
+        <sys_updated_on>2025-03-19 15:49:02</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1947,7 +2676,7 @@ outputs.key = gs.getProperty("x_941875_steam.key"); // Steam key stored in Sys_p
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=0cf1e762839022104e27cd19feaad367"/>
     <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=0cf1e762839022104e27cd19feaad367^sys_idNOT INd0f1e762839022104e27cd19feaad3c7"/>
     <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
-        <action_type_id display_value="Steam - Get Play Summary">0cf1e762839022104e27cd19feaad367</action_type_id>
+        <action_type_id display_value="Steam - Get Player Summary">0cf1e762839022104e27cd19feaad367</action_type_id>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-03-18 17:57:39</sys_created_on>
         <sys_id>d0f1e762839022104e27cd19feaad3c7</sys_id>
@@ -1956,7 +2685,6 @@ outputs.key = gs.getProperty("x_941875_steam.key"); // Steam key stored in Sys_p
         <sys_updated_on>2025-03-18 17:57:39</sys_updated_on>
     </sys_hub_action_status_metadata>
     <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=d0f1e762839022104e27cd19feaad3c7"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_0cf1e762839022104e27cd19feaad367^sys_idNOT IN4cf1e762839022104e27cd19feaad36e"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>steam_id</element>
         <help/>
@@ -1981,7 +2709,6 @@ outputs.key = gs.getProperty("x_941875_steam.key"); // Steam key stored in Sys_p
         <url_target/>
     </sys_documentation>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_0cf1e762839022104e27cd19feaad367"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_0cf1e762839022104e27cd19feaad367^sys_idNOT IN1cf1e762839022104e27cd19feaad3c0,94f1e762839022104e27cd19feaad3ba"/>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>__dont_treat_as_error__</element>
         <help/>
@@ -2002,6 +2729,29 @@ outputs.key = gs.getProperty("x_941875_steam.key"); // Steam key stored in Sys_p
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2025-03-18 17:57:39</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>Response</element>
+        <help/>
+        <hint/>
+        <label>Response</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_0cf1e762839022104e27cd19feaad367</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 15:49:02</sys_created_on>
+        <sys_id>421e080fc31caa1074b579ec050131d7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Steam" source="x_941875_steam">b6ce0238831022104e27cd19feaad338</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 15:49:02</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -2032,6 +2782,6 @@ outputs.key = gs.getProperty("x_941875_steam.key"); // Steam key stored in Sys_p
     <sys_hub_action_type_definition action="UPDATE">
         <sys_id>bb609baa831022104e27cd19feaad3c1</sys_id>
         <latest_snapshot>0cf1e762839022104e27cd19feaad367</latest_snapshot>
-        <compiler_build>glide-xanadu-07-02-2024__patch6-01-29-2025_02-11-2025_1128.zip</compiler_build>
+        <compiler_build>glide-yokohama-12-18-2024__patch1-02-21-2025_03-05-2025_2133.zip</compiler_build>
     </sys_hub_action_type_definition>
 </record_update>
