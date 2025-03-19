@@ -10,50 +10,2420 @@
         <authored_on_release_version>26000</authored_on_release_version>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
-        <compiler_build/>
         <copied_from/>
         <copied_from_name/>
         <description/>
         <flow_priority/>
-        <ih_action>false</ih_action>
+        <ih_action>true</ih_action>
         <internal_name>steam_api_call</internal_name>
-        <label_cache/>
-        <latest_snapshot/>
-        <master_snapshot/>
+        <label_cache>[{"name":"{{action.game_id}}","label":"action➛Game Id","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.game_id1}}","label":"action➛Game ID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[6e8d3934-272e-4535-a173-9260ab796093].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[98097b87-485d-4147-850c-f62b7659877c].root}}","label":"step➛JSON Parser step➛root","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
+        <master_snapshot>53cf5447c39caa1074b579ec05013182</master_snapshot>
         <master_snapshot_digest/>
-        <name>Steam API Call</name>
+        <name>Steam - Get Global Achievement Percent</name>
         <natlang/>
         <outputs/>
+        <outputs/>
         <pre_compiled>false</pre_compiled>
-        <state>draft</state>
+        <state>published</state>
         <sys_class_name>sys_hub_action_type_definition</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2025-03-14 14:38:13</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>7fed4ad1835022104e27cd19feaad318</sys_id>
-        <sys_mod_count>0</sys_mod_count>
-        <sys_name>Steam API Call</sys_name>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>Steam - Get Global Achievement Percent</sys_name>
         <sys_overrides/>
         <sys_package display_value="Steam" source="x_941875_steam">b6ce0238831022104e27cd19feaad338</sys_package>
         <sys_policy/>
         <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_7fed4ad1835022104e27cd19feaad318</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2025-03-14 14:38:13</sys_updated_on>
+        <sys_updated_on>2025-03-19 17:06:25</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
     <sys_translated_text action="delete_multiple" query="documentkey=7fed4ad1835022104e27cd19feaad318"/>
     <sys_variable_value action="delete_multiple" query="document_key=7fed4ad1835022104e27cd19feaad318"/>
-    <sys_hub_step_instance action="delete_multiple" query="action=7fed4ad1835022104e27cd19feaad318"/>
-    <sys_hub_action_input action="delete_multiple" query="model=7fed4ad1835022104e27cd19feaad318"/>
-    <sys_hub_action_output action="delete_multiple" query="model=7fed4ad1835022104e27cd19feaad318"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>7fed4ad1835022104e27cd19feaad318</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 15:15:18</sys_created_on>
+        <sys_id>7756488bc3d8aa1074b579ec050131bf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 15:15:18</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">fb56488bc3d8aa1074b579ec050131a8</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>7fed4ad1835022104e27cd19feaad318</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 15:15:18</sys_created_on>
+        <sys_id>bf56488bc3d8aa1074b579ec050131bf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 15:15:18</sys_updated_on>
+        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON"}</value>
+        <variable display_value="Action Status">7356488bc3d8aa1074b579ec050131a1</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=7fed4ad1835022104e27cd19feaad318"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>response</field>
+        <id>7fed4ad1835022104e27cd19feaad318</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:03:18</sys_created_on>
+        <sys_id>311f9007c39caa1074b579ec050131c4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:03:18</sys_updated_on>
+        <table>var__m_sys_hub_action_output_7fed4ad1835022104e27cd19feaad318</table>
+        <value>{{step[98097b87-485d-4147-850c-f62b7659877c].root}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__action_status__</field>
+        <id>7fed4ad1835022104e27cd19feaad318</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 15:15:18</sys_created_on>
+        <sys_id>f356488bc3d8aa1074b579ec050131bf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 15:15:18</sys_updated_on>
+        <table>var__m_sys_hub_action_output_7fed4ad1835022104e27cd19feaad318</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__dont_treat_as_error__</field>
+        <id>7fed4ad1835022104e27cd19feaad318</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 15:15:18</sys_created_on>
+        <sys_id>3f56488bc3d8aa1074b579ec050131be</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 15:15:18</sys_updated_on>
+        <table>var__m_sys_hub_action_output_7fed4ad1835022104e27cd19feaad318</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=7fed4ad1835022104e27cd19feaad318^sys_idNOT INa11f9007c39caa1074b579ec05013169,ed1f9007c39caa1074b579ec0501318b"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Steam - Get Global Achievement Percent">7fed4ad1835022104e27cd19feaad318</action>
+        <cid>6e8d3934-272e-4535-a173-9260ab796093</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>REST step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:03:16</sys_created_on>
+        <sys_id>a11f9007c39caa1074b579ec05013169</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:06:21</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=a11f9007c39caa1074b579ec05013169"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>a11f9007c39caa1074b579ec05013169</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:03:17</sys_created_on>
+        <sys_id>251f9007c39caa1074b579ec05013187</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:03:17</sys_updated_on>
+        <value>http://api.steampowered.com</value>
+        <variable display_value="Base URL">a67a8ef03b23320057a4a2e334efc472</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>a11f9007c39caa1074b579ec05013169</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:03:17</sys_created_on>
+        <sys_id>291f9007c39caa1074b579ec05013186</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:03:17</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Query Params">58715a1c53f22010d3a8ddeeff7b1248</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>a11f9007c39caa1074b579ec05013169</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:03:17</sys_created_on>
+        <sys_id>611f9007c39caa1074b579ec05013187</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:03:17</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="Capabilities">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>a11f9007c39caa1074b579ec05013169</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:03:17</sys_created_on>
+        <sys_id>651f9007c39caa1074b579ec05013186</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:03:17</sys_updated_on>
+        <value>ef751ff07301330025d71afe2ff6a7f9</value>
+        <variable display_value="Retry Policy">37be397587c03300a8cc7d5e27cb0ba2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>a11f9007c39caa1074b579ec05013169</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:03:17</sys_created_on>
+        <sys_id>6d1f9007c39caa1074b579ec05013187</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:03:17</sys_updated_on>
+        <value/>
+        <variable display_value="Connection Timeout">7a59009bc7522010820469467ec260c0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>a11f9007c39caa1074b579ec05013169</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:03:17</sys_created_on>
+        <sys_id>a11f9007c39caa1074b579ec05013186</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:03:17</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Headers">15288f755bd24110ab933520b881c713</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>a11f9007c39caa1074b579ec05013169</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:03:17</sys_created_on>
+        <sys_id>a91f9007c39caa1074b579ec05013187</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:03:17</sys_updated_on>
+        <value>{}</value>
+        <variable display_value="Query Parameters">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>a11f9007c39caa1074b579ec05013169</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:03:17</sys_created_on>
+        <sys_id>ad1f9007c39caa1074b579ec05013186</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:03:17</sys_updated_on>
+        <value>/ISteamUserStats/GetGlobalAchievementPercentagesForApp/v0002/?</value>
+        <variable display_value="Resource Path">3d090af03b23320057a4a2e334efc455</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>a11f9007c39caa1074b579ec05013169</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:03:17</sys_created_on>
+        <sys_id>e51f9007c39caa1074b579ec05013187</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:03:17</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>a11f9007c39caa1074b579ec05013169</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:03:17</sys_created_on>
+        <sys_id>e91f9007c39caa1074b579ec05013186</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:03:17</sys_updated_on>
+        <value>c2a0d7ea831022104e27cd19feaad332</value>
+        <variable display_value="Connection Alias">262882f03b23320057a4a2e334efc4f0</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_a11f9007c39caa1074b579ec05013169^id=a11f9007c39caa1074b579ec05013169"/>
+    <sys_element_mapping action="delete_multiple" query="id=a11f9007c39caa1074b579ec05013169"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>a11f9007c39caa1074b579ec05013169</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:03:17</sys_created_on>
+        <sys_id>a91f9007c39caa1074b579ec05013185</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:03:17</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>base_url</field>
+        <id>a11f9007c39caa1074b579ec05013169</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:03:17</sys_created_on>
+        <sys_id>e51f9007c39caa1074b579ec05013185</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:03:17</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>capabilities</field>
+        <id>a11f9007c39caa1074b579ec05013169</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:03:17</sys_created_on>
+        <sys_id>251f9007c39caa1074b579ec05013185</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:03:17</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_alias</field>
+        <id>a11f9007c39caa1074b579ec05013169</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:03:17</sys_created_on>
+        <sys_id>ad1f9007c39caa1074b579ec05013184</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:03:17</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_timeout</field>
+        <id>a11f9007c39caa1074b579ec05013169</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:03:17</sys_created_on>
+        <sys_id>211f9007c39caa1074b579ec05013186</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:03:17</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>honor_duplicate_headers</field>
+        <id>a11f9007c39caa1074b579ec05013169</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:03:17</sys_created_on>
+        <sys_id>651f9007c39caa1074b579ec05013184</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:03:17</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>honor_duplicate_query_params</field>
+        <id>a11f9007c39caa1074b579ec05013169</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:03:17</sys_created_on>
+        <sys_id>e91f9007c39caa1074b579ec05013184</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:03:17</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>query_params</field>
+        <id>a11f9007c39caa1074b579ec05013169</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:03:17</sys_created_on>
+        <sys_id>6d1f9007c39caa1074b579ec05013185</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:03:17</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{"type":"ADV_NV","value":[{"name":"gameid","value":"{{action.game_id1}}","attributes":{"omit_if_empty":false,"mandatory":false}}]}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>resource_path</field>
+        <id>a11f9007c39caa1074b579ec05013169</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:03:17</sys_created_on>
+        <sys_id>611f9007c39caa1074b579ec05013185</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:03:17</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>retry_policy</field>
+        <id>a11f9007c39caa1074b579ec05013169</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:03:17</sys_created_on>
+        <sys_id>291f9007c39caa1074b579ec05013184</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:03:17</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_translated_text action="delete_multiple" query="documentkey=a11f9007c39caa1074b579ec05013169"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=a11f9007c39caa1074b579ec05013169"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=a11f9007c39caa1074b579ec05013169^sys_idNOT INe91f9007c39caa1074b579ec05013175"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isLocal=true,uiType=password2,uiTypeLabel=Password (2 Way Encrypted),uiUniqueId=a6d80a97-c747-4d8f-947f-c7af58a7c7cd</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sn_auth_token</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">password2</internal_type>
+        <label>Credential Value</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="REST step">a11f9007c39caa1074b579ec05013169</model>
+        <model_id>a11f9007c39caa1074b579ec05013169</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_a11f9007c39caa1074b579ec05013169</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:03:17</sys_created_on>
+        <sys_id>e91f9007c39caa1074b579ec05013175</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:06:21</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=a11f9007c39caa1074b579ec05013169"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>sn_auth_token</element>
+        <help/>
+        <hint/>
+        <label>Credential Value</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_a11f9007c39caa1074b579ec05013169</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:03:17</sys_created_on>
+        <sys_id>291f9007c39caa1074b579ec05013178</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Steam" source="x_941875_steam">b6ce0238831022104e27cd19feaad338</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:03:17</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Steam - Get Global Achievement Percent">7fed4ad1835022104e27cd19feaad318</action>
+        <cid>98097b87-485d-4147-850c-f62b7659877c</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>JSON Parser step</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="JSON Parser">502328c387523300f917e55936cb0bf0</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:03:17</sys_created_on>
+        <sys_id>ed1f9007c39caa1074b579ec0501318b</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:06:22</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=ed1f9007c39caa1074b579ec0501318b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>ed1f9007c39caa1074b579ec0501318b</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:03:17</sys_created_on>
+        <sys_id>251f9007c39caa1074b579ec050131a5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:03:17</sys_updated_on>
+        <value>{"name":"root","children":[{"name":"achievementpercentages","children":[{"name":"achievements","children":[{"name":"achievements_object","children":[{"name":"name","children":[],"type":"string","jpath":"$.achievementpercentages.achievements[*].name","previewValue":"NEW_ACHIEVEMENT_1_0"},{"name":"percent","children":[],"type":"string","jpath":"$.achievementpercentages.achievements[*].percent","previewValue":"70.5"}],"type":"object","jpath":"$.achievementpercentages.achievements[*]","previewValue":""}],"type":"array.object","jpath":"$.achievementpercentages.achievements[*]","previewValue":""}],"type":"object","jpath":"$.achievementpercentages","previewValue":""}],"type":"object","jpath":"$","previewValue":""}</value>
+        <variable display_value="Target">4674240787523300f917e55936cb0b0e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>ed1f9007c39caa1074b579ec0501318b</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:03:17</sys_created_on>
+        <sys_id>e51f9007c39caa1074b579ec050131a5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:03:17</sys_updated_on>
+        <value>{"achievementpercentages":{"achievements":[{"name":"NEW_ACHIEVEMENT_1_0","percent":"70.5"},{"name":"NEW_ACHIEVEMENT_29_0","percent":"60.7"},{"name":"NEW_ACHIEVEMENT_47_0","percent":"51.1"},{"name":"NEW_ACHIEVEMENT_2_0","percent":"48.4"},{"name":"NEW_ACHIEVEMENT_43_0","percent":"48.2"},{"name":"NEW_ACHIEVEMENT_48_0","percent":"41.8"},{"name":"NEW_ACHIEVEMENT_3_0","percent":"35.9"},{"name":"NEW_ACHIEVEMENT_45_0","percent":"31.4"},{"name":"NEW_ACHIEVEMENT_12_0","percent":"30.3"},{"name":"NEW_ACHIEVEMENT_31_0","percent":"30.1"},{"name":"NEW_ACHIEVEMENT_41_0","percent":"28.9"},{"name":"NEW_ACHIEVEMENT_49_0","percent":"27.5"},{"name":"NEW_ACHIEVEMENT_9_0","percent":"27.4"},{"name":"NEW_ACHIEVEMENT_34_0","percent":"25.1"},{"name":"NEW_ACHIEVEMENT_66_0","percent":"23.1"},{"name":"NEW_ACHIEVEMENT_39_0","percent":"22.2"},{"name":"NEW_ACHIEVEMENT_38_0","percent":"21.9"},{"name":"NEW_ACHIEVEMENT_28_0","percent":"21.8"},{"name":"NEW_ACHIEVEMENT_15_0","percent":"21.8"},{"name":"NEW_ACHIEVEMENT_4_0","percent":"21.2"},{"name":"NEW_ACHIEVEMENT_25_0","percent":"20.5"},{"name":"NEW_ACHIEVEMENT_51_0","percent":"18.7"},{"name":"NEW_ACHIEVEMENT_21_0","percent":"17.6"},{"name":"NEW_ACHIEVEMENT_5_0","percent":"17.6"},{"name":"NEW_ACHIEVEMENT_10_0","percent":"17.5"},{"name":"NEW_ACHIEVEMENT_62_0","percent":"16.8"},{"name":"NEW_ACHIEVEMENT_13_0","percent":"16.1"},{"name":"NEW_ACHIEVEMENT_18_0","percent":"15.6"},{"name":"NEW_ACHIEVEMENT_14_0","percent":"15.5"},{"name":"NEW_ACHIEVEMENT_61_0","percent":"15.2"},{"name":"NEW_ACHIEVEMENT_36_0","percent":"15.2"},{"name":"NEW_ACHIEVEMENT_67_0","percent":"15.0"},{"name":"NEW_ACHIEVEMENT_6_0","percent":"14.8"},{"name":"NEW_ACHIEVEMENT_37_0","percent":"14.1"},{"name":"NEW_ACHIEVEMENT_44_0","percent":"13.9"},{"name":"NEW_ACHIEVEMENT_24_0","percent":"13.9"},{"name":"NEW_ACHIEVEMENT_26_0","percent":"13.4"},{"name":"NEW_ACHIEVEMENT_52_0","percent":"13.3"},{"name":"NEW_ACHIEVEMENT_11_0","percent":"13.0"},{"name":"NEW_ACHIEVEMENT_7_0","percent":"12.5"},{"name":"NEW_ACHIEVEMENT_68_0","percent":"12.1"},{"name":"NEW_ACHIEVEMENT_8_0","percent":"12.0"},{"name":"NEW_ACHIEVEMENT_50_0","percent":"11.9"},{"name":"NEW_ACHIEVEMENT_19_0","percent":"11.4"},{"name":"NEW_ACHIEVEMENT_16_0","percent":"11.2"},{"name":"NEW_ACHIEVEMENT_53_0","percent":"11.1"},{"name":"NEW_ACHIEVEMENT_69_0","percent":"10.8"},{"name":"NEW_ACHIEVEMENT_63_0","percent":"10.6"},{"name":"NEW_ACHIEVEMENT_23_0","percent":"10.5"},{"name":"NEW_ACHIEVEMENT_22_0","percent":"10.5"},{"name":"NEW_ACHIEVEMENT_20_0","percent":"10.4"},{"name":"NEW_ACHIEVEMENT_40_0","percent":"10.0"},{"name":"NEW_ACHIEVEMENT_33_0","percent":"9.7"},{"name":"NEW_ACHIEVEMENT_59_0","percent":"9.5"},{"name":"NEW_ACHIEVEMENT_46_0","percent":"9.3"},{"name":"NEW_ACHIEVEMENT_30_0","percent":"8.6"},{"name":"NEW_ACHIEVEMENT_32_0","percent":"8.4"},{"name":"NEW_ACHIEVEMENT_54_0","percent":"7.9"},{"name":"NEW_ACHIEVEMENT_74_0","percent":"7.7"},{"name":"NEW_ACHIEVEMENT_70_0","percent":"7.7"},{"name":"NEW_ACHIEVEMENT_55_0","percent":"7.6"},{"name":"NEW_ACHIEVEMENT_27_0","percent":"7.5"},{"name":"NEW_ACHIEVEMENT_75_0","percent":"7.1"},{"name":"NEW_ACHIEVEMENT_71_0","percent":"6.3"},{"name":"NEW_ACHIEVEMENT_17_0","percent":"5.1"},{"name":"NEW_ACHIEVEMENT_64_0","percent":"4.8"},{"name":"NEW_ACHIEVEMENT_60_0","percent":"4.6"},{"name":"NEW_ACHIEVEMENT_56_0","percent":"4.6"},{"name":"NEW_ACHIEVEMENT_72_0","percent":"3.7"},{"name":"NEW_ACHIEVEMENT_57_0","percent":"3.5"},{"name":"NEW_ACHIEVEMENT_42_0","percent":"3.2"},{"name":"NEW_ACHIEVEMENT_58_0","percent":"3.1"},{"name":"NEW_ACHIEVEMENT_65_0","percent":"3.0"},{"name":"NEW_ACHIEVEMENT_73_0","percent":"2.6"},{"name":"NEW_ACHIEVEMENT_35_0","percent":"2.6"}]}}</value>
+        <variable display_value="Sample payload">d335ac0787523300f917e55936cb0b1d</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_ed1f9007c39caa1074b579ec0501318b^id=ed1f9007c39caa1074b579ec0501318b"/>
+    <sys_element_mapping action="delete_multiple" query="id=ed1f9007c39caa1074b579ec0501318b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sample_payload</field>
+        <id>ed1f9007c39caa1074b579ec0501318b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:03:17</sys_created_on>
+        <sys_id>a11f9007c39caa1074b579ec050131a5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:03:17</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>source_data</field>
+        <id>ed1f9007c39caa1074b579ec0501318b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:03:17</sys_created_on>
+        <sys_id>ed1f9007c39caa1074b579ec050131a4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:03:17</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value>{{step[6e8d3934-272e-4535-a173-9260ab796093].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>target_schema</field>
+        <id>ed1f9007c39caa1074b579ec0501318b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:03:17</sys_created_on>
+        <sys_id>2d1f9007c39caa1074b579ec050131a4</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:03:17</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_translated_text action="delete_multiple" query="documentkey=ed1f9007c39caa1074b579ec0501318b"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=ed1f9007c39caa1074b579ec0501318b"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=ed1f9007c39caa1074b579ec0501318b^sys_idNOT INa11f9007c39caa1074b579ec05013190"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD651f90074e9caa10bb1c5f73fb6d9e8f</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>b6ce0238831022104e27cd19feaad338</scope_name>
+        <serialized_content>{"FlowDesigner:FD651f90074e9caa10bb1c5f73fb6d9e8f":{"achievementpercentages":{"achievements":[{"$0_achievements":{"name":"String","name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"e3e934b3-b66e-4323-bdeb-7322479641f4\"}"},"percent":"String","percent.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"percent\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"09646e40-58d5-40ab-b62f-38bbf843426e\"}"}}}],"achievements.$field_facets":{"SimpleMapFacet":"{\"choiceOption\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"achievements\",\"mandatory\":\"false\",\"child_name\":\"achievements_object\",\"uiUniqueId\":\"0452aaf6-7872-4782-8a81-619cf0827473\",\"uiTypeLabel\":\"Array.Object\",\"child_label\":\"achievements_object\",\"child_type_label\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"0\",\"child_uiUniqueId\":\"a72a2084-bbb2-4a20-a62a-83120714f6f8\"}"}},"achievementpercentages.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"achievementpercentages\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"2dd56761-32b9-4123-945a-375d5ee889c8\"}"}},"FlowDesigner:FD651f90074e9caa10bb1c5f73fb6d9e8f.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"root\",\"mandatory\":\"false\",\"uiUniqueId\":\"8b6aea22-4820-45cf-bf30-4f43b7189ecc\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD651f90074e9caa10bb1c5f73fb6d9e8f\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceUiUniqueId\":\"\",\"sourceType\":\"\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:03:17</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>291f9007c39caa1074b579ec0501318f</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:06:22</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FD651f90074e9caa10bb1c5f73fb6d9e8f,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=8b6aea22-4820-45cf-bf30-4f43b7189ecc</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>root</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>root</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="JSON Parser step">ed1f9007c39caa1074b579ec0501318b</model>
+        <model_id>ed1f9007c39caa1074b579ec0501318b</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_ed1f9007c39caa1074b579ec0501318b</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:03:17</sys_created_on>
+        <sys_id>a11f9007c39caa1074b579ec05013190</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:03:17</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=ed1f9007c39caa1074b579ec0501318b"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>root</element>
+        <help/>
+        <hint/>
+        <label>root</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_ed1f9007c39caa1074b579ec0501318b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:03:17</sys_created_on>
+        <sys_id>611f9007c39caa1074b579ec05013193</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Steam" source="x_941875_steam">b6ce0238831022104e27cd19feaad338</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:03:17</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_input action="delete_multiple" query="model=7fed4ad1835022104e27cd19feaad318^sys_idNOT INd51f50c3c39caa1074b579ec05013124"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=a16937fd-ab8a-4310-9480-d4f94fef60be</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>game_id1</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Game ID</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Steam - Get Global Achievement Percent">7fed4ad1835022104e27cd19feaad318</model>
+        <model_id>7fed4ad1835022104e27cd19feaad318</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_7fed4ad1835022104e27cd19feaad318</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:03:16</sys_created_on>
+        <sys_id>d51f50c3c39caa1074b579ec05013124</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:03:16</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=d51f50c3c39caa1074b579ec05013124"/>
+    <sys_hub_action_output action="delete_multiple" query="model=7fed4ad1835022104e27cd19feaad318^sys_idNOT IN7356488bc3d8aa1074b579ec050131a1,7d1f9007c39caa1074b579ec050131a7,fb56488bc3d8aa1074b579ec050131a8"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FDACTIONSTATUS,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=6c211842-277b-46f7-b2b7-53291abae3d5</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Steam - Get Global Achievement Percent">7fed4ad1835022104e27cd19feaad318</model>
+        <model_id>7fed4ad1835022104e27cd19feaad318</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_7fed4ad1835022104e27cd19feaad318</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 15:15:18</sys_created_on>
+        <sys_id>7356488bc3d8aa1074b579ec050131a1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:03:17</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7356488bc3d8aa1074b579ec050131a1"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=7356488bc3d8aa1074b579ec050131a1"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD311f9007da9caa10a67385f22fd5caa7</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>b6ce0238831022104e27cd19feaad338</scope_name>
+        <serialized_content>{"FlowDesigner:FD311f9007da9caa10a67385f22fd5caa7":{"achievementpercentages":{"achievements":[{"$0_achievements":{"name":"String","name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"e3e934b3-b66e-4323-bdeb-7322479641f4\"}"},"percent":"String","percent.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"percent\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"09646e40-58d5-40ab-b62f-38bbf843426e\"}"}}}],"achievements.$field_facets":{"SimpleMapFacet":"{\"choiceOption\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"achievements\",\"mandatory\":\"false\",\"child_name\":\"achievements_object\",\"uiUniqueId\":\"0452aaf6-7872-4782-8a81-619cf0827473\",\"uiTypeLabel\":\"Array.Object\",\"child_label\":\"achievements_object\",\"child_type_label\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"0\",\"child_uiUniqueId\":\"a72a2084-bbb2-4a20-a62a-83120714f6f8\"}"}},"achievementpercentages.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"achievementpercentages\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"2dd56761-32b9-4123-945a-375d5ee889c8\"}"}},"FlowDesigner:FD311f9007da9caa10a67385f22fd5caa7.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"98097b87-485d-4147-850c-f62b7659877c\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Response\",\"mandatory\":\"true\",\"uiUniqueId\":\"bfae9aeb-d6a2-430a-aefb-03684d2827c1\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD311f9007da9caa10a67385f22fd5caa7\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceType\":\"step\",\"sourceUiUniqueId\":\"8b6aea22-4820-45cf-bf30-4f43b7189ecc\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:03:17</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f11f9007c39caa1074b579ec050131a7</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:06:22</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FD311f9007da9caa10a67385f22fd5caa7,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,sourceId=98097b87-485d-4147-850c-f62b7659877c,sourceType=step,sourceUiUniqueId=8b6aea22-4820-45cf-bf30-4f43b7189ecc,uiType=object,uiTypeLabel=Object,uiUniqueId=bfae9aeb-d6a2-430a-aefb-03684d2827c1</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>response</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Response</label>
+        <mandatory>true</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Steam - Get Global Achievement Percent">7fed4ad1835022104e27cd19feaad318</model>
+        <model_id>7fed4ad1835022104e27cd19feaad318</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_7fed4ad1835022104e27cd19feaad318</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:03:17</sys_created_on>
+        <sys_id>7d1f9007c39caa1074b579ec050131a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:03:17</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7d1f9007c39caa1074b579ec050131a7"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=7d1f9007c39caa1074b579ec050131a7"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=605d1530-74cb-4692-8d44-0dd6bcbf17b2,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Steam - Get Global Achievement Percent">7fed4ad1835022104e27cd19feaad318</model>
+        <model_id>7fed4ad1835022104e27cd19feaad318</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_7fed4ad1835022104e27cd19feaad318</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 15:15:18</sys_created_on>
+        <sys_id>fb56488bc3d8aa1074b579ec050131a8</sys_id>
+        <sys_mod_count>5</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:06:23</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=fb56488bc3d8aa1074b579ec050131a8"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=fb56488bc3d8aa1074b579ec050131a8"/>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=7fed4ad1835022104e27cd19feaad318"/>
-    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=7fed4ad1835022104e27cd19feaad318"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_input_7fed4ad1835022104e27cd19feaad318"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=7fed4ad1835022104e27cd19feaad318^sys_idNOT INf356488bc3d8aa1074b579ec050131c1"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="Steam - Get Global Achievement Percent">7fed4ad1835022104e27cd19feaad318</action_type_id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 15:15:18</sys_created_on>
+        <sys_id>f356488bc3d8aa1074b579ec050131c1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 15:15:18</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=f356488bc3d8aa1074b579ec050131c1"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>game_id1</element>
+        <help/>
+        <hint/>
+        <label>Game ID</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_7fed4ad1835022104e27cd19feaad318</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:03:16</sys_created_on>
+        <sys_id>111f9007c39caa1074b579ec05013142</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Steam" source="x_941875_steam">b6ce0238831022104e27cd19feaad338</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:03:16</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_7fed4ad1835022104e27cd19feaad318"/>
-    <sys_documentation action="delete_multiple" query="name=var__m_sys_hub_action_output_7fed4ad1835022104e27cd19feaad318"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_7fed4ad1835022104e27cd19feaad318</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 15:15:18</sys_created_on>
+        <sys_id>3356488bc3d8aa1074b579ec050131bb</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Steam" source="x_941875_steam">b6ce0238831022104e27cd19feaad338</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 15:15:18</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_7fed4ad1835022104e27cd19feaad318</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 15:15:18</sys_created_on>
+        <sys_id>bf56488bc3d8aa1074b579ec050131a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Steam" source="x_941875_steam">b6ce0238831022104e27cd19feaad338</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 15:15:18</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>response</element>
+        <help/>
+        <hint/>
+        <label>Response</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_7fed4ad1835022104e27cd19feaad318</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:03:17</sys_created_on>
+        <sys_id>f91f9007c39caa1074b579ec050131ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Steam" source="x_941875_steam">b6ce0238831022104e27cd19feaad338</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:03:17</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
     <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_7fed4ad1835022104e27cd19feaad318"/>
-    <sys_hub_action_plan action="delete_multiple" query="action_id=7fed4ad1835022104e27cd19feaad318"/>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=7fed4ad1835022104e27cd19feaad318^sys_idNOT INfbcf9447c39caa1074b579ec05013123"/>
+    <sys_hub_action_plan action="INSERT_OR_UPDATE">
+        <action_id display_value="Steam - Get Global Achievement Percent">7fed4ad1835022104e27cd19feaad318</action_id>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"fbcf9447c39caa1074b579ec05013123","name":"plan","plan_signature":null}}</plan>
+        <snapshot>67cf5447c39caa1074b579ec050131dd</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:06:27</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>fbcf9447c39caa1074b579ec05013123</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:06:27</sys_updated_on>
+    </sys_hub_action_plan>
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <annotation/>
+        <attributes>{labelCacheCleanUpExecuted=true}</attributes>
+        <authored_on_release_version>26000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority/>
+        <internal_name>steam__get_global_achievement_percent</internal_name>
+        <label_cache>[{"name":"{{action.game_id}}","label":"action➛Game Id","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.game_id1}}","label":"action➛Game ID","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[6e8d3934-272e-4535-a173-9260ab796093].response_body}}","label":"step➛REST step➛Response Body","type":"step","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"hidden_for":"DATASTREAM"}},{"name":"{{step[98097b87-485d-4147-850c-f62b7659877c].root}}","label":"step➛JSON Parser step➛root","type":"step","ref":"","reference_display":"","base_type":"object","parent_table_name":"","column_name":"","choices":null,"attributes":{}}]</label_cache>
+        <master>true</master>
+        <name>Steam - Get Global Achievement Percent</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <parent_action display_value="Steam - Get Global Achievement Percent">7fed4ad1835022104e27cd19feaad318</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:06:24</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>53cf5447c39caa1074b579ec05013182</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:06:24</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=53cf5447c39caa1074b579ec05013182"/>
+    <sys_variable_value action="delete_multiple" query="document_key=53cf5447c39caa1074b579ec05013182"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>53cf5447c39caa1074b579ec05013182</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:06:25</sys_created_on>
+        <sys_id>23cf5447c39caa1074b579ec050131db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:06:25</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">e3cf5447c39caa1074b579ec050131d1</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>53cf5447c39caa1074b579ec05013182</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:06:25</sys_created_on>
+        <sys_id>e3cf5447c39caa1074b579ec050131db</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:06:25</sys_updated_on>
+        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"4adfb7bc-9d67-498d-88d0-8d6c3d584fed\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON"}</value>
+        <variable display_value="Action Status">67cf5447c39caa1074b579ec050131cd</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=53cf5447c39caa1074b579ec05013182"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>response</field>
+        <id>53cf5447c39caa1074b579ec05013182</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:06:25</sys_created_on>
+        <sys_id>2bcf5447c39caa1074b579ec050131da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:06:25</sys_updated_on>
+        <table>var__m_sys_hub_action_output_53cf5447c39caa1074b579ec05013182</table>
+        <value>{{step[98097b87-485d-4147-850c-f62b7659877c].root}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__action_status__</field>
+        <id>53cf5447c39caa1074b579ec05013182</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:06:25</sys_created_on>
+        <sys_id>afcf5447c39caa1074b579ec050131da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:06:25</sys_updated_on>
+        <table>var__m_sys_hub_action_output_53cf5447c39caa1074b579ec05013182</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__dont_treat_as_error__</field>
+        <id>53cf5447c39caa1074b579ec05013182</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:06:25</sys_created_on>
+        <sys_id>ebcf5447c39caa1074b579ec050131da</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:06:25</sys_updated_on>
+        <table>var__m_sys_hub_action_output_53cf5447c39caa1074b579ec05013182</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=53cf5447c39caa1074b579ec05013182^sys_idNOT INafcf5447c39caa1074b579ec050131ad,d3cf5447c39caa1074b579ec0501318e"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Steam - Get Global Achievement Percent">53cf5447c39caa1074b579ec05013182</action>
+        <cid>98097b87-485d-4147-850c-f62b7659877c</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>JSON Parser step</label>
+        <order>2</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="JSON Parser">502328c387523300f917e55936cb0bf0</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:06:25</sys_created_on>
+        <sys_id>afcf5447c39caa1074b579ec050131ad</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:06:25</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=afcf5447c39caa1074b579ec050131ad"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>afcf5447c39caa1074b579ec050131ad</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:06:25</sys_created_on>
+        <sys_id>27cf5447c39caa1074b579ec050131c6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:06:25</sys_updated_on>
+        <value>{"name":"root","children":[{"name":"achievementpercentages","children":[{"name":"achievements","children":[{"name":"achievements_object","children":[{"name":"name","children":[],"type":"string","jpath":"$.achievementpercentages.achievements[*].name","previewValue":"NEW_ACHIEVEMENT_1_0"},{"name":"percent","children":[],"type":"string","jpath":"$.achievementpercentages.achievements[*].percent","previewValue":"70.5"}],"type":"object","jpath":"$.achievementpercentages.achievements[*]","previewValue":""}],"type":"array.object","jpath":"$.achievementpercentages.achievements[*]","previewValue":""}],"type":"object","jpath":"$.achievementpercentages","previewValue":""}],"type":"object","jpath":"$","previewValue":""}</value>
+        <variable display_value="Target">4674240787523300f917e55936cb0b0e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>afcf5447c39caa1074b579ec050131ad</document_key>
+        <order>300</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:06:25</sys_created_on>
+        <sys_id>e7cf5447c39caa1074b579ec050131c6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:06:25</sys_updated_on>
+        <value>{"achievementpercentages":{"achievements":[{"name":"NEW_ACHIEVEMENT_1_0","percent":"70.5"},{"name":"NEW_ACHIEVEMENT_29_0","percent":"60.7"},{"name":"NEW_ACHIEVEMENT_47_0","percent":"51.1"},{"name":"NEW_ACHIEVEMENT_2_0","percent":"48.4"},{"name":"NEW_ACHIEVEMENT_43_0","percent":"48.2"},{"name":"NEW_ACHIEVEMENT_48_0","percent":"41.8"},{"name":"NEW_ACHIEVEMENT_3_0","percent":"35.9"},{"name":"NEW_ACHIEVEMENT_45_0","percent":"31.4"},{"name":"NEW_ACHIEVEMENT_12_0","percent":"30.3"},{"name":"NEW_ACHIEVEMENT_31_0","percent":"30.1"},{"name":"NEW_ACHIEVEMENT_41_0","percent":"28.9"},{"name":"NEW_ACHIEVEMENT_49_0","percent":"27.5"},{"name":"NEW_ACHIEVEMENT_9_0","percent":"27.4"},{"name":"NEW_ACHIEVEMENT_34_0","percent":"25.1"},{"name":"NEW_ACHIEVEMENT_66_0","percent":"23.1"},{"name":"NEW_ACHIEVEMENT_39_0","percent":"22.2"},{"name":"NEW_ACHIEVEMENT_38_0","percent":"21.9"},{"name":"NEW_ACHIEVEMENT_28_0","percent":"21.8"},{"name":"NEW_ACHIEVEMENT_15_0","percent":"21.8"},{"name":"NEW_ACHIEVEMENT_4_0","percent":"21.2"},{"name":"NEW_ACHIEVEMENT_25_0","percent":"20.5"},{"name":"NEW_ACHIEVEMENT_51_0","percent":"18.7"},{"name":"NEW_ACHIEVEMENT_21_0","percent":"17.6"},{"name":"NEW_ACHIEVEMENT_5_0","percent":"17.6"},{"name":"NEW_ACHIEVEMENT_10_0","percent":"17.5"},{"name":"NEW_ACHIEVEMENT_62_0","percent":"16.8"},{"name":"NEW_ACHIEVEMENT_13_0","percent":"16.1"},{"name":"NEW_ACHIEVEMENT_18_0","percent":"15.6"},{"name":"NEW_ACHIEVEMENT_14_0","percent":"15.5"},{"name":"NEW_ACHIEVEMENT_61_0","percent":"15.2"},{"name":"NEW_ACHIEVEMENT_36_0","percent":"15.2"},{"name":"NEW_ACHIEVEMENT_67_0","percent":"15.0"},{"name":"NEW_ACHIEVEMENT_6_0","percent":"14.8"},{"name":"NEW_ACHIEVEMENT_37_0","percent":"14.1"},{"name":"NEW_ACHIEVEMENT_44_0","percent":"13.9"},{"name":"NEW_ACHIEVEMENT_24_0","percent":"13.9"},{"name":"NEW_ACHIEVEMENT_26_0","percent":"13.4"},{"name":"NEW_ACHIEVEMENT_52_0","percent":"13.3"},{"name":"NEW_ACHIEVEMENT_11_0","percent":"13.0"},{"name":"NEW_ACHIEVEMENT_7_0","percent":"12.5"},{"name":"NEW_ACHIEVEMENT_68_0","percent":"12.1"},{"name":"NEW_ACHIEVEMENT_8_0","percent":"12.0"},{"name":"NEW_ACHIEVEMENT_50_0","percent":"11.9"},{"name":"NEW_ACHIEVEMENT_19_0","percent":"11.4"},{"name":"NEW_ACHIEVEMENT_16_0","percent":"11.2"},{"name":"NEW_ACHIEVEMENT_53_0","percent":"11.1"},{"name":"NEW_ACHIEVEMENT_69_0","percent":"10.8"},{"name":"NEW_ACHIEVEMENT_63_0","percent":"10.6"},{"name":"NEW_ACHIEVEMENT_23_0","percent":"10.5"},{"name":"NEW_ACHIEVEMENT_22_0","percent":"10.5"},{"name":"NEW_ACHIEVEMENT_20_0","percent":"10.4"},{"name":"NEW_ACHIEVEMENT_40_0","percent":"10.0"},{"name":"NEW_ACHIEVEMENT_33_0","percent":"9.7"},{"name":"NEW_ACHIEVEMENT_59_0","percent":"9.5"},{"name":"NEW_ACHIEVEMENT_46_0","percent":"9.3"},{"name":"NEW_ACHIEVEMENT_30_0","percent":"8.6"},{"name":"NEW_ACHIEVEMENT_32_0","percent":"8.4"},{"name":"NEW_ACHIEVEMENT_54_0","percent":"7.9"},{"name":"NEW_ACHIEVEMENT_74_0","percent":"7.7"},{"name":"NEW_ACHIEVEMENT_70_0","percent":"7.7"},{"name":"NEW_ACHIEVEMENT_55_0","percent":"7.6"},{"name":"NEW_ACHIEVEMENT_27_0","percent":"7.5"},{"name":"NEW_ACHIEVEMENT_75_0","percent":"7.1"},{"name":"NEW_ACHIEVEMENT_71_0","percent":"6.3"},{"name":"NEW_ACHIEVEMENT_17_0","percent":"5.1"},{"name":"NEW_ACHIEVEMENT_64_0","percent":"4.8"},{"name":"NEW_ACHIEVEMENT_60_0","percent":"4.6"},{"name":"NEW_ACHIEVEMENT_56_0","percent":"4.6"},{"name":"NEW_ACHIEVEMENT_72_0","percent":"3.7"},{"name":"NEW_ACHIEVEMENT_57_0","percent":"3.5"},{"name":"NEW_ACHIEVEMENT_42_0","percent":"3.2"},{"name":"NEW_ACHIEVEMENT_58_0","percent":"3.1"},{"name":"NEW_ACHIEVEMENT_65_0","percent":"3.0"},{"name":"NEW_ACHIEVEMENT_73_0","percent":"2.6"},{"name":"NEW_ACHIEVEMENT_35_0","percent":"2.6"}]}}</value>
+        <variable display_value="Sample payload">d335ac0787523300f917e55936cb0b1d</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_afcf5447c39caa1074b579ec050131ad^id=afcf5447c39caa1074b579ec050131ad"/>
+    <sys_element_mapping action="delete_multiple" query="id=afcf5447c39caa1074b579ec050131ad"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>sample_payload</field>
+        <id>afcf5447c39caa1074b579ec050131ad</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:06:25</sys_created_on>
+        <sys_id>a3cf5447c39caa1074b579ec050131c6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:06:25</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>source_data</field>
+        <id>afcf5447c39caa1074b579ec050131ad</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:06:25</sys_created_on>
+        <sys_id>efcf5447c39caa1074b579ec050131c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:06:25</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value>{{step[6e8d3934-272e-4535-a173-9260ab796093].response_body}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>target_schema</field>
+        <id>afcf5447c39caa1074b579ec050131ad</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:06:25</sys_created_on>
+        <sys_id>2fcf5447c39caa1074b579ec050131c5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:06:25</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_502328c387523300f917e55936cb0bf0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_translated_text action="delete_multiple" query="documentkey=afcf5447c39caa1074b579ec050131ad"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=afcf5447c39caa1074b579ec050131ad"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=afcf5447c39caa1074b579ec050131ad^sys_idNOT INefcf5447c39caa1074b579ec050131bd"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FDa3cf5447db9caa1072c6ca1d44a4cfbd</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>b6ce0238831022104e27cd19feaad338</scope_name>
+        <serialized_content>{"FlowDesigner:FDa3cf5447db9caa1072c6ca1d44a4cfbd":{"achievementpercentages":{"achievements":[{"$0_achievements":{"name":"String","name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"e3e934b3-b66e-4323-bdeb-7322479641f4\"}"},"percent":"String","percent.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"percent\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"09646e40-58d5-40ab-b62f-38bbf843426e\"}"}}}],"achievements.$field_facets":{"SimpleMapFacet":"{\"choiceOption\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"achievements\",\"mandatory\":\"false\",\"child_name\":\"achievements_object\",\"uiUniqueId\":\"0452aaf6-7872-4782-8a81-619cf0827473\",\"uiTypeLabel\":\"Array.Object\",\"child_label\":\"achievements_object\",\"child_type_label\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"0\",\"child_uiUniqueId\":\"a72a2084-bbb2-4a20-a62a-83120714f6f8\"}"}},"achievementpercentages.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"achievementpercentages\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"2dd56761-32b9-4123-945a-375d5ee889c8\"}"}},"FlowDesigner:FDa3cf5447db9caa1072c6ca1d44a4cfbd.$type_facets":{"SimpleMapFacet":"{\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"root\",\"mandatory\":\"false\",\"uiUniqueId\":\"8b6aea22-4820-45cf-bf30-4f43b7189ecc\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDa3cf5447db9caa1072c6ca1d44a4cfbd\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:06:25</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>67cf5447c39caa1074b579ec050131bd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:06:25</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FDa3cf5447db9caa1072c6ca1d44a4cfbd,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=8b6aea22-4820-45cf-bf30-4f43b7189ecc</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>root</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>root</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="JSON Parser step">afcf5447c39caa1074b579ec050131ad</model>
+        <model_id>afcf5447c39caa1074b579ec050131ad</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_afcf5447c39caa1074b579ec050131ad</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:06:25</sys_created_on>
+        <sys_id>efcf5447c39caa1074b579ec050131bd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:06:25</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=afcf5447c39caa1074b579ec050131ad"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>root</element>
+        <help/>
+        <hint/>
+        <label>root</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_afcf5447c39caa1074b579ec050131ad</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:06:25</sys_created_on>
+        <sys_id>afcf5447c39caa1074b579ec050131c0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Steam" source="x_941875_steam">b6ce0238831022104e27cd19feaad338</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:06:25</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Steam - Get Global Achievement Percent">53cf5447c39caa1074b579ec05013182</action>
+        <cid>6e8d3934-272e-4535-a173-9260ab796093</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <inputs/>
+        <label>REST step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="REST">07a762fb47222200b4fad7527c9a7129</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:06:24</sys_created_on>
+        <sys_id>d3cf5447c39caa1074b579ec0501318e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:06:24</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=d3cf5447c39caa1074b579ec0501318e"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>d3cf5447c39caa1074b579ec0501318e</document_key>
+        <order>13</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:06:25</sys_created_on>
+        <sys_id>13cf5447c39caa1074b579ec050131a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:06:25</sys_updated_on>
+        <value>18409d8007482000dada43c0d1021e8f</value>
+        <variable display_value="Capabilities">c30a451d2f201300a09a839fb18c95b4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>d3cf5447c39caa1074b579ec0501318e</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:06:25</sys_created_on>
+        <sys_id>17cf5447c39caa1074b579ec050131a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:06:25</sys_updated_on>
+        <value>ef751ff07301330025d71afe2ff6a7f9</value>
+        <variable display_value="Retry Policy">37be397587c03300a8cc7d5e27cb0ba2</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>d3cf5447c39caa1074b579ec0501318e</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:06:25</sys_created_on>
+        <sys_id>1fcf5447c39caa1074b579ec050131a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:06:25</sys_updated_on>
+        <value/>
+        <variable display_value="Connection Timeout">7a59009bc7522010820469467ec260c0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>d3cf5447c39caa1074b579ec0501318e</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:06:25</sys_created_on>
+        <sys_id>53cf5447c39caa1074b579ec050131a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:06:25</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Headers">15288f755bd24110ab933520b881c713</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>d3cf5447c39caa1074b579ec0501318e</document_key>
+        <order>25</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:06:25</sys_created_on>
+        <sys_id>5bcf5447c39caa1074b579ec050131a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:06:25</sys_updated_on>
+        <value>{}</value>
+        <variable display_value="Query Parameters">4328e2fb47222200b4fad7527c9a7164</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>d3cf5447c39caa1074b579ec0501318e</document_key>
+        <order>20</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:06:25</sys_created_on>
+        <sys_id>5fcf5447c39caa1074b579ec050131a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:06:25</sys_updated_on>
+        <value>/ISteamUserStats/GetGlobalAchievementPercentagesForApp/v0002/?</value>
+        <variable display_value="Resource Path">3d090af03b23320057a4a2e334efc455</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>d3cf5447c39caa1074b579ec0501318e</document_key>
+        <order>12</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:06:25</sys_created_on>
+        <sys_id>97cf5447c39caa1074b579ec050131a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:06:25</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f11ebf865f101300a09a2abd7f466652</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>d3cf5447c39caa1074b579ec0501318e</document_key>
+        <order>10</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:06:25</sys_created_on>
+        <sys_id>9bcf5447c39caa1074b579ec050131a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:06:25</sys_updated_on>
+        <value>c2a0d7ea831022104e27cd19feaad332</value>
+        <variable display_value="Connection Alias">262882f03b23320057a4a2e334efc4f0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>d3cf5447c39caa1074b579ec0501318e</document_key>
+        <order>15</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:06:25</sys_created_on>
+        <sys_id>d3cf5447c39caa1074b579ec050131a9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:06:25</sys_updated_on>
+        <value>http://api.steampowered.com</value>
+        <variable display_value="Base URL">a67a8ef03b23320057a4a2e334efc472</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>d3cf5447c39caa1074b579ec0501318e</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:06:25</sys_created_on>
+        <sys_id>d7cf5447c39caa1074b579ec050131a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:06:25</sys_updated_on>
+        <value>1</value>
+        <variable display_value="Honor Duplicate Query Params">58715a1c53f22010d3a8ddeeff7b1248</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_d3cf5447c39caa1074b579ec0501318e^id=d3cf5447c39caa1074b579ec0501318e"/>
+    <sys_element_mapping action="delete_multiple" query="id=d3cf5447c39caa1074b579ec0501318e"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>d3cf5447c39caa1074b579ec0501318e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:06:25</sys_created_on>
+        <sys_id>5bcf5447c39caa1074b579ec050131a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:06:25</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>base_url</field>
+        <id>d3cf5447c39caa1074b579ec0501318e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:06:25</sys_created_on>
+        <sys_id>97cf5447c39caa1074b579ec050131a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:06:25</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>capabilities</field>
+        <id>d3cf5447c39caa1074b579ec0501318e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:06:25</sys_created_on>
+        <sys_id>d3cf5447c39caa1074b579ec050131a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:06:25</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_alias</field>
+        <id>d3cf5447c39caa1074b579ec0501318e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:06:24</sys_created_on>
+        <sys_id>5fcf5447c39caa1074b579ec050131a6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:06:24</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>connection_timeout</field>
+        <id>d3cf5447c39caa1074b579ec0501318e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:06:25</sys_created_on>
+        <sys_id>dfcf5447c39caa1074b579ec050131a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:06:25</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>honor_duplicate_headers</field>
+        <id>d3cf5447c39caa1074b579ec0501318e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:06:24</sys_created_on>
+        <sys_id>17cf5447c39caa1074b579ec050131a6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:06:24</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>honor_duplicate_query_params</field>
+        <id>d3cf5447c39caa1074b579ec0501318e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:06:24</sys_created_on>
+        <sys_id>9bcf5447c39caa1074b579ec050131a6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:06:24</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>query_params</field>
+        <id>d3cf5447c39caa1074b579ec0501318e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:06:25</sys_created_on>
+        <sys_id>1fcf5447c39caa1074b579ec050131a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:06:25</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value>{"type":"ADV_NV","value":[{"name":"gameid","value":"{{action.game_id1}}","attributes":{"omit_if_empty":false,"mandatory":false}}]}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>resource_path</field>
+        <id>d3cf5447c39caa1074b579ec0501318e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:06:24</sys_created_on>
+        <sys_id>13cf5447c39caa1074b579ec050131a7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:06:24</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>retry_policy</field>
+        <id>d3cf5447c39caa1074b579ec0501318e</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:06:24</sys_created_on>
+        <sys_id>d7cf5447c39caa1074b579ec050131a6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:06:24</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_07a762fb47222200b4fad7527c9a7129</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_translated_text action="delete_multiple" query="documentkey=d3cf5447c39caa1074b579ec0501318e"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=d3cf5447c39caa1074b579ec0501318e"/>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=d3cf5447c39caa1074b579ec0501318e^sys_idNOT IN53cf5447c39caa1074b579ec05013198"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,isLocal=true,uiType=password2,uiTypeLabel=Password (2 Way Encrypted),uiUniqueId=a6d80a97-c747-4d8f-947f-c7af58a7c7cd</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>sn_auth_token</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">password2</internal_type>
+        <label>Credential Value</label>
+        <mandatory>false</mandatory>
+        <max_length>255</max_length>
+        <model display_value="REST step">d3cf5447c39caa1074b579ec0501318e</model>
+        <model_id>d3cf5447c39caa1074b579ec0501318e</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_d3cf5447c39caa1074b579ec0501318e</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:06:24</sys_created_on>
+        <sys_id>53cf5447c39caa1074b579ec05013198</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:06:24</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=d3cf5447c39caa1074b579ec0501318e"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>sn_auth_token</element>
+        <help/>
+        <hint/>
+        <label>Credential Value</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_d3cf5447c39caa1074b579ec0501318e</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:06:24</sys_created_on>
+        <sys_id>13cf5447c39caa1074b579ec0501319b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Steam" source="x_941875_steam">b6ce0238831022104e27cd19feaad338</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:06:24</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_input action="delete_multiple" query="model=53cf5447c39caa1074b579ec05013182^sys_idNOT IN5fcf5447c39caa1074b579ec05013184"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=a16937fd-ab8a-4310-9480-d4f94fef60be</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>game_id1</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Game ID</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Steam - Get Global Achievement Percent">53cf5447c39caa1074b579ec05013182</model>
+        <model_id>53cf5447c39caa1074b579ec05013182</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_53cf5447c39caa1074b579ec05013182</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:06:24</sys_created_on>
+        <sys_id>5fcf5447c39caa1074b579ec05013184</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:06:24</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=5fcf5447c39caa1074b579ec05013184"/>
+    <sys_hub_action_output action="delete_multiple" query="model=53cf5447c39caa1074b579ec05013182^sys_idNOT IN67cf5447c39caa1074b579ec050131cd,6fcf5447c39caa1074b579ec050131c8,e3cf5447c39caa1074b579ec050131d1"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FDACTIONSTATUS,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=6c211842-277b-46f7-b2b7-53291abae3d5</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Steam - Get Global Achievement Percent">53cf5447c39caa1074b579ec05013182</model>
+        <model_id>53cf5447c39caa1074b579ec05013182</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_53cf5447c39caa1074b579ec05013182</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:06:25</sys_created_on>
+        <sys_id>67cf5447c39caa1074b579ec050131cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:06:25</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=67cf5447c39caa1074b579ec050131cd"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=67cf5447c39caa1074b579ec050131cd"/>
+    <sys_complex_object action="INSERT_OR_UPDATE">
+        <label/>
+        <name>FD23cf54475d9caa1022e754c387d7f3c8</name>
+        <namespace>FlowDesigner</namespace>
+        <scope_name>b6ce0238831022104e27cd19feaad338</scope_name>
+        <serialized_content>{"FlowDesigner:FD23cf54475d9caa1022e754c387d7f3c8":{"achievementpercentages":{"achievements":[{"$0_achievements":{"name":"String","name.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"name\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"e3e934b3-b66e-4323-bdeb-7322479641f4\"}"},"percent":"String","percent.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"percent\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"0\",\"uiUniqueId\":\"09646e40-58d5-40ab-b62f-38bbf843426e\"}"}}}],"achievements.$field_facets":{"SimpleMapFacet":"{\"choiceOption\":\"\",\"default_value\":\"\",\"child_hint\":\"\",\"child_maxsize\":\"\",\"label\":\"achievements\",\"mandatory\":\"false\",\"child_name\":\"achievements_object\",\"uiUniqueId\":\"0452aaf6-7872-4782-8a81-619cf0827473\",\"uiTypeLabel\":\"Array.Object\",\"child_label\":\"achievements_object\",\"child_type_label\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"array.object\",\"child_defaultValue\":\"\",\"child_type\":\"object\",\"order\":\"1\",\"max_length\":\"0\",\"child_uiUniqueId\":\"a72a2084-bbb2-4a20-a62a-83120714f6f8\"}"}},"achievementpercentages.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Object\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"object\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"achievementpercentages\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"0\",\"uiUniqueId\":\"2dd56761-32b9-4123-945a-375d5ee889c8\"}"}},"FlowDesigner:FD23cf54475d9caa1022e754c387d7f3c8.$type_facets":{"SimpleMapFacet":"{\"sourceId\":\"98097b87-485d-4147-850c-f62b7659877c\",\"choiceOption\":\"\",\"default_value\":\"\",\"label\":\"Response\",\"mandatory\":\"true\",\"uiUniqueId\":\"bfae9aeb-d6a2-430a-aefb-03684d2827c1\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FD23cf54475d9caa1022e754c387d7f3c8\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"sourceType\":\"step\",\"sourceUiUniqueId\":\"8b6aea22-4820-45cf-bf30-4f43b7189ecc\",\"hint\":\"\",\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}}</serialized_content>
+        <sys_class_name>sys_complex_object</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:06:25</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e3cf5447c39caa1074b579ec050131c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:06:25</sys_updated_on>
+        <type>complex_object_schema</type>
+    </sys_complex_object>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>co_type_name=FD23cf54475d9caa1022e754c387d7f3c8,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,sourceId=98097b87-485d-4147-850c-f62b7659877c,sourceType=step,sourceUiUniqueId=8b6aea22-4820-45cf-bf30-4f43b7189ecc,uiType=object,uiTypeLabel=Object,uiUniqueId=bfae9aeb-d6a2-430a-aefb-03684d2827c1</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>response</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Response</label>
+        <mandatory>true</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Steam - Get Global Achievement Percent">53cf5447c39caa1074b579ec05013182</model>
+        <model_id>53cf5447c39caa1074b579ec05013182</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_53cf5447c39caa1074b579ec05013182</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:06:25</sys_created_on>
+        <sys_id>6fcf5447c39caa1074b579ec050131c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:06:25</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=6fcf5447c39caa1074b579ec050131c8"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=6fcf5447c39caa1074b579ec050131c8"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=605d1530-74cb-4692-8d44-0dd6bcbf17b2,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Steam - Get Global Achievement Percent">53cf5447c39caa1074b579ec05013182</model>
+        <model_id>53cf5447c39caa1074b579ec05013182</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_53cf5447c39caa1074b579ec05013182</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:06:25</sys_created_on>
+        <sys_id>e3cf5447c39caa1074b579ec050131d1</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:06:25</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e3cf5447c39caa1074b579ec050131d1"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=e3cf5447c39caa1074b579ec050131d1"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=53cf5447c39caa1074b579ec05013182"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=53cf5447c39caa1074b579ec05013182^sys_idNOT INa3cf5447c39caa1074b579ec050131dd"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="Steam - Get Global Achievement Percent">53cf5447c39caa1074b579ec05013182</action_type_id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:06:25</sys_created_on>
+        <sys_id>a3cf5447c39caa1074b579ec050131dd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:06:25</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=a3cf5447c39caa1074b579ec050131dd"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>game_id1</element>
+        <help/>
+        <hint/>
+        <label>Game ID</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_53cf5447c39caa1074b579ec05013182</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:06:24</sys_created_on>
+        <sys_id>97cf5447c39caa1074b579ec05013188</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Steam" source="x_941875_steam">b6ce0238831022104e27cd19feaad338</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:06:24</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_53cf5447c39caa1074b579ec05013182"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>response</element>
+        <help/>
+        <hint/>
+        <label>Response</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_53cf5447c39caa1074b579ec05013182</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:06:25</sys_created_on>
+        <sys_id>2bcf5447c39caa1074b579ec050131cc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Steam" source="x_941875_steam">b6ce0238831022104e27cd19feaad338</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:06:25</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_53cf5447c39caa1074b579ec05013182</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:06:25</sys_created_on>
+        <sys_id>a7cf5447c39caa1074b579ec050131d0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Steam" source="x_941875_steam">b6ce0238831022104e27cd19feaad338</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:06:25</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_53cf5447c39caa1074b579ec05013182</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-19 17:06:25</sys_created_on>
+        <sys_id>efcf5447c39caa1074b579ec050131d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Steam" source="x_941875_steam">b6ce0238831022104e27cd19feaad338</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-19 17:06:25</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_53cf5447c39caa1074b579ec05013182"/>
+    <sys_hub_action_type_definition action="UPDATE">
+        <sys_id>7fed4ad1835022104e27cd19feaad318</sys_id>
+        <latest_snapshot>53cf5447c39caa1074b579ec05013182</latest_snapshot>
+        <compiler_build>glide-yokohama-12-18-2024__patch1-02-21-2025_03-05-2025_2133.zip</compiler_build>
+    </sys_hub_action_type_definition>
 </record_update>
