@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>false</active>
+        <annotation/>
+        <attributes>browserActivatedIn=firefox,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,viewActivatedIn=naturalLanguage</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <compiler_build/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Creates Steam Game Records</description>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source/>
+        <internal_name>create_games</internal_name>
+        <label_cache>[{"name":"5077851b-4b62-40ae-9aab-3d5499251191.response.response.games","label":"1 - Steam - Get Owned Games➛Response➛response➛games","reference":"","reference_display":"games","type":"array.object","base_type":"array.object","usedInstances":{"4f2f428f-df69-4c0b-ad78-2a01ba425d74":["items"]},"attributes":{}},{"name":"subflow.steam_id","label":"Input➛Steam ID","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"5077851b-4b62-40ae-9aab-3d5499251191":["steam_id"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"9d59c91a-6423-41ee-a3af-7db6b5ce8760","sourceUiUniqueId":"","sourceType":"","sourceId":""}},{"name":"4f2f428f-df69-4c0b-ad78-2a01ba425d74.item.appid","label":"2 - For Each➛games_object➛appid","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"c02719fa-c3b0-46e8-9d4b-288a5e3810b3":["conditions"],"c27df104-a32b-4292-ae85-c6a23458739e":["appid"]},"attributes":{}},{"name":"c02719fa-c3b0-46e8-9d4b-288a5e3810b3.status","label":"3 - Look Up Record➛Status","reference_display":"Status","type":"choice","base_type":"choice","choices":[{"label":"Error","value":"1","order":0.0},{"label":"Success","value":"0","order":1.0}],"usedInstances":{"88e141f1-db14-425b-b7c7-6b7ef8f6833b":["condition"]},"attributes":{"uiType":"choice","uiTypeLabel":"Choice","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"5e478657-3a84-4a60-a92b-d3e80005ad34"}},{"name":"5077851b-4b62-40ae-9aab-3d5499251191.response.response.game_count","label":"1 - Steam - Get Owned Games➛Response➛response➛game_count","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"c27df104-a32b-4292-ae85-c6a23458739e":["appid"]},"attributes":{}},{"name":"4f2f428f-df69-4c0b-ad78-2a01ba425d74.item.name","label":"2 - For Each➛games_object➛name","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"c27df104-a32b-4292-ae85-c6a23458739e":["name"]},"attributes":{}}]</label_cache>
+        <latest_snapshot/>
+        <master_snapshot/>
+        <master_snapshot_digest/>
+        <name>Create Game Records</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id/>
+        <run_as>user</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>draft</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-20 18:32:01</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>dffcb9d7c3582e1074b579ec050131d2</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_name>Create Game Records</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Steam" source="x_941875_steam">b6ce0238831022104e27cd19feaad338</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
+        <sys_update_name>sys_hub_flow_dffcb9d7c3582e1074b579ec050131d2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-20 20:16:40</sys_updated_on>
+        <type>subflow</type>
+        <version>2</version>
+    </sys_hub_flow>
+    <sys_translated_text action="delete_multiple" query="documentkey=dffcb9d7c3582e1074b579ec050131d2"/>
+    <sys_variable_value action="delete_multiple" query="document_key=dffcb9d7c3582e1074b579ec050131d2"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=dffcb9d7c3582e1074b579ec050131d2"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=dffcb9d7c3582e1074b579ec050131d2^sys_idNOT INd7fcb9d7c3582e1074b579ec050131d5"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>dffcb9d7c3582e1074b579ec050131d2</id>
+        <name>Create Games</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-20 18:32:01</sys_created_on>
+        <sys_id>d7fcb9d7c3582e1074b579ec050131d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-20 18:32:01</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=d7fcb9d7c3582e1074b579ec050131d5"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=dffcb9d7c3582e1074b579ec050131d2^sys_idNOT INb2ce39dbc3582e1074b579ec05013137"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=9d59c91a-6423-41ee-a3af-7db6b5ce8760</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>steam_id</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Steam ID</label>
+        <mandatory>true</mandatory>
+        <max_length>8000</max_length>
+        <model display_value="Create Game Records">dffcb9d7c3582e1074b579ec050131d2</model>
+        <model_id>dffcb9d7c3582e1074b579ec050131d2</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_dffcb9d7c3582e1074b579ec050131d2</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-20 18:39:55</sys_created_on>
+        <sys_id>b2ce39dbc3582e1074b579ec05013137</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-20 18:39:55</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b2ce39dbc3582e1074b579ec05013137"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=dffcb9d7c3582e1074b579ec050131d2"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=dffcb9d7c3582e1074b579ec050131d2"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=dffcb9d7c3582e1074b579ec050131d2"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=dffcb9d7c3582e1074b579ec050131d2^sys_idNOT IN2e945e97c3d82e1074b579ec050131d6,bfc39e57c3d82e1074b579ec05013125,ffc39e57c3d82e1074b579ec05013127"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Steam - Get Owned Games">0748148bc35caa1074b579ec05013118</action_type>
+        <action_type_parent display_value="Steam - Get Owned Games">b987440fc3d8aa1074b579ec050131e6</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Create Game Records">dffcb9d7c3582e1074b579ec050131d2</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-20 20:15:12</sys_created_on>
+        <sys_id>2e945e97c3d82e1074b579ec050131d6</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-20 20:16:40</sys_updated_on>
+        <ui_id>5077851b-4b62-40ae-9aab-3d5499251191</ui_id>
+        <values>H4sIAAAAAAAA/91T72vbMBD9V4Q+x54dO7WTfiqUQmBbYe36pRQjS+dEIEuuLLXNQv73nWKnLf1FGYPBvtnvdPfevbu73lIp6IImWV6meVnzbMYZS5Mir2fFHHgyS9IsTWs6oZq1gC97B6ytMGlC75jyAdpue183ytzHh+Buh2Eh+06xzdXHr/haKmFB08X1zYR2zCKNA0sX2xcht+mgUqwGhcUunJV6hemfVf+UiNxkefpmQ4Fij4zFjRVBSTqh8OBAC0CyhqkeJrRlWjBn7IYunPUIWGDiXKvNsxcPvfyF9cokSUK8AeyFBwL67LcabRpgvjaSw3nnpNED4litxhxulG/190F2MBga5pU7GIyI77EedEGqdo9Kmou1uf9xIDyTet/VGFSGM/X4xxz2XnsHfRiAl5cvHBmQry+nAApaZKxa1nWIVJ01d3LPgqLbeKXwJw6zR3W9XOmY8dBhjBay+Azx0z18xawM7X7DMpgc6H5qeethGaac84wfiXoeQTovo7wQEJVZUkRNjq0VxSydcUF3e2urWx+aGkwa7agGR/FBz63s3AlKuIOx891kPIRpwYtpnmQ8E2+sEi+f9kZqrryACrVWUjfm2UGEjXh9ACP6Nxb+EyoPictBJjnpOrIcZL7fwDsHMP34AEbk1QWsZVhCOmxzvyDBgC/72DE5yFqhFhIEEaxHlFkZErTYloUk/CZuDcR413kXk0v8HreeyJ44Qyw4bzUJeyd6YpA+pv/g9g4TH9DTNwf/Xx+nEE3G0+IoysqyjvIc6og1CY/KeTLleQ0C1/OPj/PmNzkXVrKnBgAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
+        <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Create Game Records">dffcb9d7c3582e1074b579ec050131d2</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id>4f2f428f-df69-4c0b-ad78-2a01ba425d74</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-20 20:11:44</sys_created_on>
+        <sys_id>bfc39e57c3d82e1074b579ec05013125</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-20 20:15:12</sys_updated_on>
+        <ui_id>c02719fa-c3b0-46e8-9d4b-288a5e3810b3</ui_id>
+        <values>H4sIAAAAAAAA/9VY227bOBD9FUHPtleSZUvK26KBFwV2G6DJ9iUbEJRI2sTSpEpRuRn+9w51sR3fY7to+mJAw7mcmTkzonw/czlxr1ySeAlLkkEceV6/73nDYT/Dfpr2h1nqpTh0O67EUwqaBqeCwuMjFqV9fkZJ6MfRABWG4mnzOwbdApQIL3KBX741urf20PmrOcwmXBBNpXt1/9Bxc6xBbqh2r2ZrR+Ylp0jglArwcWfjO18smM7R2N8Yb+ZiA7SPSNaulSYWi9dx6bOhklAIxbAoaMedYkmwUfplIdEUkxsploIJlwY8ulb5ueCv4D72rB6jkFZG67PFI2oKVYuzieIZvckNV7KW1EDrQyXKqfxSJ2BLTBkuhWlLDJKyAH80t5gtiAYRu52op69twBGXVXrNoVAZFosnbIzmaWmgS9ALKugUHKEpznMuxyjX6pFXxoBl2hsLeOgxoZ4gaMHHsoczC7wHJcK9EcivK/E3rLnN4h9wA8YAiAvoNqqLXqhSV1V5RJkoi+pAY1nUvtx5VSv0vbQo66yb/FBdIlAoMs1z8ycYPNImlXmnpfdgL0WSJSUyJQm3MYsVjtvMyX8l2JLZLGQBC4OYdQkbJt0w89IuJlHcDbDnA9uCAYnCHjd02qvM5vPNOTjb32mj82k1t2PrstV4W7GaIXoja4bIv9gQhZ73i8bI6PLjTdGhuagTPjAcPtlLArLsd6G0QXXlVqZjk98nM3TEqSBvlvsR4FrjG0s2J33ZhbchKLMx1rZ88Ntv+Q9JTwBEUF1vLgWX1UsWgF6Gt4O91Ej9NR5U7V+ytpLhItuynR2jnNfTt2zV15a/R4BsDW8BkXNXo9wCvN2vrfuGuv2LUbcfvI+6QJz72QL9ompbCtzepWzrWv1Xq4/X9YFdKwb+/GFB/U+nxfTfGzOwMddms/+u4VxlVn1yvYNgF76p7Ri2zs+c7gmYNvFQPazoiZMxNcvorRZR5gmL/7edN+xazFCV3tm3Pn/vh0G6cuvjDE2hTzyHq6imGVChQFhTxFQpCWouoUva2L4xrgvTKG/ukK/UlFo6CkbOMRPqVNrOQvsSm+WI7FrDz8xp02swFA6k51TpOYv03leMHfsovOBd75x9NMJcVKWHj4l8pXdUa6V37KQDXdvT/iMX1pGg/IuCOn+jbeP71s12AOtv8WV67tbJKE7DAA+jvu97nu+RyIujyI+HKRviKGTLQUOokBmsRfDMgBjgHrVEaLvqba6Wejee/PcJ7Nw/Ro2LY/G2xtdK2q/WIDKOBQx9dlrAh1Nq9kWqlKBYLuk5+GUL46P8w1Lyu/Xa1KK/tzXtZ73MS/6v5N9L+tmSIqZeEPsk68aRH3VDRobdhOBBFyfpIOoTmoXs9Pfzww98b1fHdhQAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Create Game Records">dffcb9d7c3582e1074b579ec050131d2</flow>
+        <generation_source/>
+        <order>5</order>
+        <parent_ui_id>88e141f1-db14-425b-b7c7-6b7ef8f6833b</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-20 20:11:44</sys_created_on>
+        <sys_id>ffc39e57c3d82e1074b579ec05013127</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-20 20:16:40</sys_updated_on>
+        <ui_id>c27df104-a32b-4292-ae85-c6a23458739e</ui_id>
+        <values>H4sIAAAAAAAA/9VUTW/bMAz9K4HOjiF/5PM2YMhOa4F16KXrDNqiEwGy7Mlymizwfx9lK2nXrUA3DCiWQwA9ko/viaLvTkwKtmbzCPlsFc2LJEqSmPN4mUb5PMmjWCSAmLKAaaiQMi3kCrPhELA9qM6Bh2yVRsvFLGstQuX/t5TTUpKQbaPgeOtzb1xw8sEHi51UwqBm67v7gDVgCLdo2Pr0LGSPDWYKclTE8dmJmFyNIl5r4KfiFwy5Ls+x2ggniAcMDxa1QOpXgmoxYBVoAbY2R7a2piPAIIhrrY6XjJ3UlgiZyz208juxL7nLK5GsFTjGLsfMX9YIF7taFnjdWFnrERmE+WCtukpfjSbcNWMJnbLnayaka4kPGyfZifCKyptd/fDp3HAj9eDOB1VdgLqcwFoj887SpGgeqLAioqyCppF6mzWm3suhmLRU4VbRISxV/UBNW7nVIRROeEg3BOGG8PcDfAtGOhcfiYaK+8F99q1zfUcfXnE2mqaEtjCyse+Ibo9eXB+cX65Avnpx8FH+OOjhsbZPXq3zIb50nCfidErLuEzjZTkV5Xw1TQueT0EsltMYeJRDGs/EIg2lxSocyvr+q6P982pX1fe/rsXbivnLNcSKLFicjCaCV0/kTLCRqET7mxGd99A3yPa+gd/F6F/tYjTnw+9tNnLU+Z8t5JNv4wuref8DxIT8VlYGAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=dffcb9d7c3582e1074b579ec050131d2"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=dffcb9d7c3582e1074b579ec050131d2^sys_idNOT IN7fc39e57c3d82e1074b579ec05013126,c3ce39dbc3582e1074b579ec0501316f"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">77c39e57c3d82e1074b579ec05013126</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Create Game Records">dffcb9d7c3582e1074b579ec050131d2</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>4</order>
+        <outputs_assigned/>
+        <parent_ui_id>4f2f428f-df69-4c0b-ad78-2a01ba425d74</parent_ui_id>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-20 20:11:44</sys_created_on>
+        <sys_id>7fc39e57c3d82e1074b579ec05013126</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-20 20:16:40</sys_updated_on>
+        <ui_id>88e141f1-db14-425b-b7c7-6b7ef8f6833b</ui_id>
+        <values>H4sIAAAAAAAA/+1UyW7bMBD9FUNnWdBiubZvRtMUBdoGaIJc0kAYUSObKEWqJOWlhv+9Qy2O0ThoEPTYm+bN9t7wQQdPNbZurLlTS2P4SnqLh0ff49Jh9H3wJFToLTymZMEtVzJrAd/bgGhc4iOFoyuFRn5vwjB+Z0dLoRGK/ejDjhtLlQU3tYD9/asb2JqLQmPPpQZNHRa1tzj8kbL7GjMBOQqae2s1lytq5wVFZQhlNGcRS+JpEtOe2STKp0kexUUCCAnVDY3vB2mjzy3iv6jZ7SPcDJuULhytKPQ93FmUBdLqEoRB36tAFmCV3p8QJ/JGiidgzaWlcZ4r3hn+i2bHaeoKSySNDLvkKcz6S3YwWyvO8KZ2BDvEQi76HqZEU8mvnQ73BlhCI+zwBoQ0huZh7Ug7Fj2l8nattt+GhddctgL7pFAMxCkCS2fIG4vGPQwKrGhQVkFd03GyWqsNb5uJSxWsBAVBKdSWljqfBcAc8YBuBME14VctfA+aOxVfaAw1dzRzMJxlrSdpnNUk4dieJfvZOEKdwF5K1l2DCgzTvLZL2rPBnvXRf27oMy8fDowMGc1LGLMkD8eTKc7G82KSj+PZDFJMZlGYJ4GxYBtzPDr/JkX03OJvnvMvnD+HtEyjML3s/Mn0kvMveP5lu8d/sbt7oFe6PQzD/3Y/tzs3WWfbXlu7/M1uf3TW7jaYzjcFMm6IyJ3DPg1/eZfYkwE4O4e2Sv9wEp6w429fINwLLwYAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">47ce39dbc3582e1074b579ec0501316e</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Create Game Records">dffcb9d7c3582e1074b579ec050131d2</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="For Each">098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+        <order>2</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-20 18:39:55</sys_created_on>
+        <sys_id>c3ce39dbc3582e1074b579ec0501316f</sys_id>
+        <sys_mod_count>4</sys_mod_count>
+        <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-20 20:16:40</sys_updated_on>
+        <ui_id>4f2f428f-df69-4c0b-ad78-2a01ba425d74</ui_id>
+        <values>H4sIAAAAAAAA/61TTU/jMBD9Lz63UT7aQnpDQkgcWCQWcUEomtiT1sKxvbbTko3y3xk3aUGcOcXzZvzmvRlnYKYLtgv+2dx4L3eabV/fFkzqiNF5YBpaZFsmA7aeLdgBVBfjYVinV1fX66xerupNvlylgMsSoF4WYr0qy3ydZWWWOPTWaI9fhx3x+XEkKiG9VdC//B4j30slHM4mLDjKBHRsO/xIhd5ipaBGRY2fkBsnojkpKMxK0ZRZWvIi3xR5mubXq6zeFHWWiwJQbKjufPN+HsqPGUV2Ct2Flz5RRZ4uGH4E1AKpUQPK44K1oAUE43q2Da4jwCGIR636S8Ve6kB0LNZ+ePmfuLM0jYUNkiOOU/ISVvNgJ5jvjeT4aIM0ekIC1Gq+w43qWv1nkh9Xgg10KpxXQkjniQ9t1BxVzJKav3tzfDo3vJP65G9OKsNBXSIIwcm6C+jjGlBhS0RVC9ZKvausMwd5ukxa2mSnKEgaZY7UND7HBHgUntCIILkj/PYEv4CT0cUD0dDl8eS++tfFvpOPWXE1maYCz5204YboDjiLG9/ie56Y/PQwBHLpqeFzxO7Pf0FM9LRkyb9DR+Peo9QvbPwEEJAYB08DAAA=</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=dffcb9d7c3582e1074b579ec050131d2"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=dffcb9d7c3582e1074b579ec050131d2"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>steam_id</element>
+        <help/>
+        <hint/>
+        <label>Steam ID</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_dffcb9d7c3582e1074b579ec050131d2</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2025-03-20 18:39:55</sys_created_on>
+        <sys_id>bece39dbc3582e1074b579ec0501313a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Steam" source="x_941875_steam">b6ce0238831022104e27cd19feaad338</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Steam">b6ce0238831022104e27cd19feaad338</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2025-03-20 18:39:55</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_dffcb9d7c3582e1074b579ec050131d2"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_dffcb9d7c3582e1074b579ec050131d2"/>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=dffcb9d7c3582e1074b579ec050131d2"/>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=dffcb9d7c3582e1074b579ec050131d2"/>
+</record_update>
